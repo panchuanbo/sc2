@@ -1,0 +1,2173 @@
+(tensorflow) C:\Users\Chuanbo Pan\Documents\Stanford\Junior Year\stanford-fall2017-assignments\cs229\sc2>python -m pysc2.bin.agent --map DefeatZerglingsAndBanelings --agent agents.deepq.DeepQAgent --max_agent_steps 500000 --norender
+I1116 00:11:30.203898  2356 sc_process.py:148] Connection attempt 0 (running: None)
+I1116 00:11:32.236372  2356 sc_process.py:148] Connection attempt 1 (running: None)
+I1116 00:11:34.271540  2356 sc_process.py:148] Connection attempt 2 (running: None)
+I1116 00:11:36.302285  2356 sc_process.py:148] Connection attempt 3 (running: None)
+I1116 00:11:38.331268  2356 sc_process.py:148] Connection attempt 4 (running: None)
+I1116 00:11:47.516910  2356 sc2_env.py:200] Environment is ready.
+2017-11-16 00:11:47.518386: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2017-11-16 00:11:48.034934: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\common_runtime\gpu\gpu_device.cc:1030] Found device 0 with properties:
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.6705
+pciBusID: 0000:41:00.0
+totalMemory: 11.00GiB freeMemory: 9.10GiB
+2017-11-16 00:11:48.035043: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\common_runtime\gpu\gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:41:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from ./models/actorcritic_lingbane
+I1116 00:11:52.783582  2356 tf_logging.py:82] Restoring parameters from ./models/actorcritic_lingbane
+I1116 00:11:53.367700  2356 sc2_env.py:240] Starting episode: 1
+Episode 0: 0
+   0/no_op                                              ()
+   1/move_camera                                        (1/minimap [64, 64])
+   2/select_point                                       (6/select_point_act [4]; 0/screen [84, 84])
+   3/select_rect                                        (7/select_add [2]; 0/screen [84, 84]; 2/screen2 [84, 84])
+   4/select_control_group                               (4/control_group_act [5]; 5/control_group_id [10])
+   5/select_unit                                        (8/select_unit_act [4]; 9/select_unit_id [500])
+ 453/Stop_quick                                         (3/queued [2])
+   7/select_army                                        (7/select_add [2])
+ 451/Smart_screen                                       (3/queued [2]; 0/screen [84, 84])
+ 452/Smart_minimap                                      (3/queued [2]; 1/minimap [64, 64])
+ 331/Move_screen                                        (3/queued [2]; 0/screen [84, 84])
+ 332/Move_minimap                                       (3/queued [2]; 1/minimap [64, 64])
+ 333/Patrol_screen                                      (3/queued [2]; 0/screen [84, 84])
+ 334/Patrol_minimap                                     (3/queued [2]; 1/minimap [64, 64])
+  12/Attack_screen                                      (3/queued [2]; 0/screen [84, 84])
+  13/Attack_minimap                                     (3/queued [2]; 1/minimap [64, 64])
+ 274/HoldPosition_quick                                 (3/queued [2])
+I1116 00:11:58.186421  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [17]
+I1116 00:11:58.201963  2356 sc2_env.py:240] Starting episode: 2
+Episode 1: 17
+  22/Behavior_BuildingAttackOn_quick                    (3/queued [2])
+ 191/Effect_Explode_quick                               (3/queued [2])
+I1116 00:12:01.103437  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [57]
+I1116 00:12:01.119481  2356 sc2_env.py:240] Starting episode: 3
+Episode 2: 57
+I1116 00:12:01.643249  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:12:01.659293  2356 sc2_env.py:240] Starting episode: 4
+Episode 3: 6
+I1116 00:12:04.479726  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [67]
+I1116 00:12:04.494767  2356 sc2_env.py:240] Starting episode: 5
+Episode 4: 67
+I1116 00:12:07.267273  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [8]
+I1116 00:12:07.283960  2356 sc2_env.py:240] Starting episode: 6
+Episode 5: 8
+I1116 00:12:37.496545  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [22]
+I1116 00:12:37.625397  2356 sc2_env.py:240] Starting episode: 7
+Episode 6: 22
+I1116 00:12:50.190805  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [52]
+I1116 00:12:50.313930  2356 sc2_env.py:240] Starting episode: 8
+Episode 7: 52
+I1116 00:12:59.579930  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:12:59.707415  2356 sc2_env.py:240] Starting episode: 9
+Episode 8: 16
+I1116 00:13:20.669571  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [58]
+I1116 00:13:20.792406  2356 sc2_env.py:240] Starting episode: 10
+Episode 9: 58
+I1116 00:13:25.565722  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 00:13:25.692552  2356 sc2_env.py:240] Starting episode: 11
+Episode 10: 31
+I1116 00:13:39.796919  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:13:39.957055  2356 sc2_env.py:240] Starting episode: 12
+Episode 11: 21
+I1116 00:13:42.377020  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [18]
+I1116 00:13:42.518091  2356 sc2_env.py:240] Starting episode: 13
+Episode 12: 18
+I1116 00:13:46.108198  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [23]
+I1116 00:13:46.227206  2356 sc2_env.py:240] Starting episode: 14
+Episode 13: 23
+I1116 00:14:05.506927  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:14:05.636420  2356 sc2_env.py:240] Starting episode: 15
+Episode 14: 21
+I1116 00:14:09.011924  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:14:09.146930  2356 sc2_env.py:240] Starting episode: 16
+Episode 15: 11
+I1116 00:14:14.650333  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:14:14.769157  2356 sc2_env.py:240] Starting episode: 17
+Episode 16: 16
+I1116 00:14:45.621636  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [43]
+I1116 00:14:45.765180  2356 sc2_env.py:240] Starting episode: 18
+Episode 17: 43
+I1116 00:14:50.590966  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:14:50.735078  2356 sc2_env.py:240] Starting episode: 19
+Episode 18: 26
+I1116 00:14:54.351705  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:14:54.507152  2356 sc2_env.py:240] Starting episode: 20
+Episode 19: 21
+I1116 00:14:57.448394  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [22]
+I1116 00:14:57.581558  2356 sc2_env.py:240] Starting episode: 21
+Episode 20: 22
+I1116 00:15:02.821604  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [27]
+I1116 00:15:02.969648  2356 sc2_env.py:240] Starting episode: 22
+Episode 21: 27
+I1116 00:15:07.781663  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:15:07.922548  2356 sc2_env.py:240] Starting episode: 23
+Episode 22: 31
+I1116 00:15:11.655027  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [13], score: [18]
+I1116 00:15:11.788664  2356 sc2_env.py:240] Starting episode: 24
+Episode 23: 18
+I1116 00:15:17.807276  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:15:17.939137  2356 sc2_env.py:240] Starting episode: 25
+Episode 24: 31
+I1116 00:15:23.366566  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:15:23.495920  2356 sc2_env.py:240] Starting episode: 26
+Episode 25: 21
+I1116 00:15:26.443494  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:15:26.586049  2356 sc2_env.py:240] Starting episode: 27
+Episode 26: 26
+I1116 00:15:29.156545  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [11]
+I1116 00:15:29.298056  2356 sc2_env.py:240] Starting episode: 28
+Episode 27: 11
+I1116 00:15:39.137816  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:15:39.279873  2356 sc2_env.py:240] Starting episode: 29
+Episode 28: 21
+I1116 00:15:42.452386  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:15:42.585250  2356 sc2_env.py:240] Starting episode: 30
+Episode 29: 6
+I1116 00:15:44.403478  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [14]
+I1116 00:15:44.554407  2356 sc2_env.py:240] Starting episode: 31
+Episode 30: 14
+I1116 00:15:47.498815  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:15:47.659254  2356 sc2_env.py:240] Starting episode: 32
+Episode 31: 11
+I1116 00:15:51.000889  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:15:51.138411  2356 sc2_env.py:240] Starting episode: 33
+Episode 32: 21
+I1116 00:16:01.646470  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:16:01.773702  2356 sc2_env.py:240] Starting episode: 34
+Episode 33: 11
+I1116 00:16:06.588835  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [28]
+I1116 00:16:06.744538  2356 sc2_env.py:240] Starting episode: 35
+Episode 34: 28
+I1116 00:16:09.819342  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [7]
+I1116 00:16:09.955058  2356 sc2_env.py:240] Starting episode: 36
+Episode 35: 7
+I1116 00:16:14.221402  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:16:14.365796  2356 sc2_env.py:240] Starting episode: 37
+Episode 36: 6
+I1116 00:16:20.592247  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [33]
+I1116 00:16:20.736951  2356 sc2_env.py:240] Starting episode: 38
+Episode 37: 33
+I1116 00:16:23.741791  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:16:23.869140  2356 sc2_env.py:240] Starting episode: 39
+Episode 38: 26
+I1116 00:16:27.285025  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 00:16:27.427080  2356 sc2_env.py:240] Starting episode: 40
+Episode 39: 6
+I1116 00:16:31.432066  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [33]
+I1116 00:16:31.573121  2356 sc2_env.py:240] Starting episode: 41
+Episode 40: 33
+I1116 00:16:34.171430  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:16:34.300783  2356 sc2_env.py:240] Starting episode: 42
+Episode 41: 31
+I1116 00:17:03.075620  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:17:03.202147  2356 sc2_env.py:240] Starting episode: 43
+Episode 42: 26
+I1116 00:17:07.747833  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:17:07.878784  2356 sc2_env.py:240] Starting episode: 44
+Episode 43: 31
+I1116 00:17:10.900691  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:17:11.031184  2356 sc2_env.py:240] Starting episode: 45
+Episode 44: 26
+I1116 00:17:26.677460  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:17:26.808894  2356 sc2_env.py:240] Starting episode: 46
+Episode 45: 31
+I1116 00:17:30.980333  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:17:31.124873  2356 sc2_env.py:240] Starting episode: 47
+Episode 46: 16
+I1116 00:17:38.122740  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:17:38.268296  2356 sc2_env.py:240] Starting episode: 48
+Episode 47: 21
+I1116 00:17:46.446818  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:17:46.577603  2356 sc2_env.py:240] Starting episode: 49
+Episode 48: 31
+I1116 00:18:15.922128  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [32]
+I1116 00:18:16.049611  2356 sc2_env.py:240] Starting episode: 50
+Episode 49: 32
+I1116 00:18:18.486895  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 00:18:18.622427  2356 sc2_env.py:240] Starting episode: 51
+Episode 50: 12
+I1116 00:18:36.476635  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:18:36.607493  2356 sc2_env.py:240] Starting episode: 52
+Episode 51: 21
+I1116 00:18:45.537819  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [21]
+I1116 00:18:45.654145  2356 sc2_env.py:240] Starting episode: 53
+Episode 52: 21
+I1116 00:18:49.258074  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [21]
+I1116 00:18:49.386276  2356 sc2_env.py:240] Starting episode: 54
+Episode 53: 21
+I1116 00:18:52.328202  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:18:52.470732  2356 sc2_env.py:240] Starting episode: 55
+Episode 54: 6
+I1116 00:18:56.714586  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [29]
+I1116 00:18:56.854317  2356 sc2_env.py:240] Starting episode: 56
+Episode 55: 29
+I1116 00:18:59.922135  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 00:19:00.048122  2356 sc2_env.py:240] Starting episode: 57
+Episode 56: 12
+I1116 00:19:03.370743  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:19:03.514778  2356 sc2_env.py:240] Starting episode: 58
+Episode 57: 31
+I1116 00:19:19.578241  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:19:19.722861  2356 sc2_env.py:240] Starting episode: 59
+Episode 58: 26
+I1116 00:19:24.026056  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:19:24.142875  2356 sc2_env.py:240] Starting episode: 60
+Episode 59: 26
+I1116 00:19:29.673086  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:19:29.803944  2356 sc2_env.py:240] Starting episode: 61
+Episode 60: 36
+I1116 00:20:00.620165  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [12]
+I1116 00:20:00.739491  2356 sc2_env.py:240] Starting episode: 62
+Episode 61: 12
+I1116 00:20:05.268398  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [12]
+I1116 00:20:05.395746  2356 sc2_env.py:240] Starting episode: 63
+Episode 62: 12
+I1116 00:20:12.859687  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [6]
+I1116 00:20:12.989287  2356 sc2_env.py:240] Starting episode: 64
+Episode 63: 6
+I1116 00:20:18.062205  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:20:18.196737  2356 sc2_env.py:240] Starting episode: 65
+Episode 64: 26
+I1116 00:20:49.161774  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [44]
+I1116 00:20:49.291485  2356 sc2_env.py:240] Starting episode: 66
+Episode 65: 44
+I1116 00:20:52.182537  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [29]
+I1116 00:20:52.323074  2356 sc2_env.py:240] Starting episode: 67
+Episode 66: 29
+I1116 00:20:55.792789  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:20:55.908076  2356 sc2_env.py:240] Starting episode: 68
+Episode 67: 6
+I1116 00:20:58.612332  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:20:58.749574  2356 sc2_env.py:240] Starting episode: 69
+Episode 68: 16
+I1116 00:21:00.219697  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 00:21:00.361724  2356 sc2_env.py:240] Starting episode: 70
+Episode 69: 6
+I1116 00:21:11.388606  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [67]
+I1116 00:21:11.515452  2356 sc2_env.py:240] Starting episode: 71
+Episode 70: 67
+I1116 00:21:16.727653  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:21:16.854927  2356 sc2_env.py:240] Starting episode: 72
+Episode 71: 26
+I1116 00:21:22.116493  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:21:22.247489  2356 sc2_env.py:240] Starting episode: 73
+Episode 72: 36
+I1116 00:21:33.130626  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [63]
+I1116 00:21:33.270691  2356 sc2_env.py:240] Starting episode: 74
+Episode 73: 63
+I1116 00:21:38.388530  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [26]
+I1116 00:21:38.529459  2356 sc2_env.py:240] Starting episode: 75
+Episode 74: 26
+I1116 00:22:09.212350  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:22:09.355838  2356 sc2_env.py:240] Starting episode: 76
+Episode 75: 0
+I1116 00:22:40.217077  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [43]
+I1116 00:22:40.347934  2356 sc2_env.py:240] Starting episode: 77
+Episode 76: 43
+I1116 00:23:11.487413  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [4]
+I1116 00:23:11.642729  2356 sc2_env.py:240] Starting episode: 78
+Episode 77: 4
+I1116 00:23:20.452036  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:23:20.576767  2356 sc2_env.py:240] Starting episode: 79
+Episode 78: 21
+I1116 00:23:51.495340  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [51]
+I1116 00:23:51.642743  2356 sc2_env.py:240] Starting episode: 80
+Episode 79: 51
+I1116 00:23:55.556250  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:23:55.688258  2356 sc2_env.py:240] Starting episode: 81
+Episode 80: 11
+I1116 00:24:04.876334  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:24:05.024751  2356 sc2_env.py:240] Starting episode: 82
+Episode 81: 16
+I1116 00:24:09.923808  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:24:10.059964  2356 sc2_env.py:240] Starting episode: 83
+Episode 82: 36
+I1116 00:24:13.357660  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [11]
+I1116 00:24:13.491174  2356 sc2_env.py:240] Starting episode: 84
+Episode 83: 11
+I1116 00:24:29.206199  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:24:29.364916  2356 sc2_env.py:240] Starting episode: 85
+Episode 84: 26
+I1116 00:24:32.007965  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:24:32.138486  2356 sc2_env.py:240] Starting episode: 86
+Episode 85: 11
+I1116 00:24:41.809706  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:24:41.970804  2356 sc2_env.py:240] Starting episode: 87
+Episode 86: 36
+I1116 00:24:46.309841  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [11]
+I1116 00:24:46.470298  2356 sc2_env.py:240] Starting episode: 88
+Episode 87: 11
+I1116 00:24:52.869009  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:24:52.986831  2356 sc2_env.py:240] Starting episode: 89
+Episode 88: 21
+I1116 00:24:58.454802  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:24:58.581147  2356 sc2_env.py:240] Starting episode: 90
+Episode 89: 11
+I1116 00:25:29.366434  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [5], score: [5]
+I1116 00:25:29.495788  2356 sc2_env.py:240] Starting episode: 91
+Episode 90: 5
+I1116 00:26:00.239385  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:26:00.370242  2356 sc2_env.py:240] Starting episode: 92
+Episode 91: 0
+I1116 00:26:09.490242  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:26:09.634090  2356 sc2_env.py:240] Starting episode: 93
+Episode 92: 11
+I1116 00:26:15.195845  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:26:15.345060  2356 sc2_env.py:240] Starting episode: 94
+Episode 93: 11
+I1116 00:26:28.980183  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:26:29.124499  2356 sc2_env.py:240] Starting episode: 95
+Episode 94: 6
+I1116 00:26:35.157165  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:26:35.302176  2356 sc2_env.py:240] Starting episode: 96
+Episode 95: 16
+I1116 00:26:41.309712  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:26:41.431043  2356 sc2_env.py:240] Starting episode: 97
+Episode 96: 6
+I1116 00:27:07.917726  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:27:08.069640  2356 sc2_env.py:240] Starting episode: 98
+Episode 97: 11
+I1116 00:27:10.984471  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [8]
+I1116 00:27:11.111317  2356 sc2_env.py:240] Starting episode: 99
+Episode 98: 8
+I1116 00:27:14.442448  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:27:14.572579  2356 sc2_env.py:240] Starting episode: 100
+Episode 99: 31
+I1116 00:27:17.268017  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [8]
+I1116 00:27:17.419574  2356 sc2_env.py:240] Starting episode: 101
+Episode 100: 8
+I1116 00:27:26.673035  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:27:26.814421  2356 sc2_env.py:240] Starting episode: 102
+Episode 101: 31
+I1116 00:27:39.154103  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [28]
+I1116 00:27:39.298028  2356 sc2_env.py:240] Starting episode: 103
+Episode 102: 28
+I1116 00:27:49.913389  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [33]
+I1116 00:27:50.043745  2356 sc2_env.py:240] Starting episode: 104
+Episode 103: 33
+I1116 00:27:56.699840  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:27:56.846798  2356 sc2_env.py:240] Starting episode: 105
+Episode 104: 16
+I1116 00:28:28.334685  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:28:28.477730  2356 sc2_env.py:240] Starting episode: 106
+Episode 105: 0
+I1116 00:29:00.077353  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [22]
+I1116 00:29:00.223434  2356 sc2_env.py:240] Starting episode: 107
+Episode 106: 22
+I1116 00:29:09.763451  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [7], score: [59]
+I1116 00:29:09.892956  2356 sc2_env.py:240] Starting episode: 108
+Episode 107: 59
+I1116 00:29:25.315783  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:29:25.444635  2356 sc2_env.py:240] Starting episode: 109
+Episode 108: 6
+I1116 00:29:29.735146  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [9]
+I1116 00:29:29.885294  2356 sc2_env.py:240] Starting episode: 110
+Episode 109: 9
+I1116 00:29:32.173722  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [16]
+I1116 00:29:32.326138  2356 sc2_env.py:240] Starting episode: 111
+Episode 110: 16
+I1116 00:29:41.528988  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:29:41.650920  2356 sc2_env.py:240] Starting episode: 112
+Episode 111: 6
+I1116 00:29:52.092603  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 00:29:52.220452  2356 sc2_env.py:240] Starting episode: 113
+Episode 112: 1
+I1116 00:29:56.532425  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:29:56.651941  2356 sc2_env.py:240] Starting episode: 114
+Episode 113: 26
+I1116 00:30:16.000366  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:30:16.143951  2356 sc2_env.py:240] Starting episode: 115
+Episode 114: 36
+I1116 00:30:22.244594  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:30:22.373112  2356 sc2_env.py:240] Starting episode: 116
+Episode 115: 31
+I1116 00:30:41.580717  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:30:41.700215  2356 sc2_env.py:240] Starting episode: 117
+Episode 116: 26
+I1116 00:30:45.442702  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 00:30:45.583384  2356 sc2_env.py:240] Starting episode: 118
+Episode 117: 26
+I1116 00:31:16.914492  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [44]
+I1116 00:31:17.050865  2356 sc2_env.py:240] Starting episode: 119
+Episode 118: 44
+I1116 00:31:48.274019  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [10]
+I1116 00:31:48.434370  2356 sc2_env.py:240] Starting episode: 120
+Episode 119: 10
+I1116 00:32:01.823611  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [52]
+I1116 00:32:01.956163  2356 sc2_env.py:240] Starting episode: 121
+Episode 120: 52
+I1116 00:32:33.534538  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [18]
+I1116 00:32:33.653027  2356 sc2_env.py:240] Starting episode: 122
+Episode 121: 18
+I1116 00:33:05.059459  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [5]
+I1116 00:33:05.202851  2356 sc2_env.py:240] Starting episode: 123
+Episode 122: 5
+I1116 00:33:15.094564  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:33:15.231438  2356 sc2_env.py:240] Starting episode: 124
+Episode 123: 31
+I1116 00:33:18.579976  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:33:18.723384  2356 sc2_env.py:240] Starting episode: 125
+Episode 124: 21
+I1116 00:33:50.039297  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [22]
+I1116 00:33:50.168824  2356 sc2_env.py:240] Starting episode: 126
+Episode 125: 22
+I1116 00:33:55.912739  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:33:56.054105  2356 sc2_env.py:240] Starting episode: 127
+Episode 126: 36
+I1116 00:34:02.667194  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:34:02.795043  2356 sc2_env.py:240] Starting episode: 128
+Episode 127: 26
+I1116 00:34:12.385739  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:34:12.546621  2356 sc2_env.py:240] Starting episode: 129
+Episode 128: 11
+I1116 00:34:16.371437  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [2], score: [26]
+I1116 00:34:16.530099  2356 sc2_env.py:240] Starting episode: 130
+Episode 129: 26
+I1116 00:34:20.130431  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:34:20.260494  2356 sc2_env.py:240] Starting episode: 131
+Episode 130: 26
+I1116 00:34:34.531667  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 00:34:34.671344  2356 sc2_env.py:240] Starting episode: 132
+Episode 131: 31
+I1116 00:35:05.657595  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:35:05.775077  2356 sc2_env.py:240] Starting episode: 133
+Episode 132: 0
+I1116 00:35:16.262974  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:35:16.423581  2356 sc2_env.py:240] Starting episode: 134
+Episode 133: 26
+I1116 00:35:21.639351  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:35:21.800293  2356 sc2_env.py:240] Starting episode: 135
+Episode 134: 26
+I1116 00:35:25.381893  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [16]
+I1116 00:35:25.538774  2356 sc2_env.py:240] Starting episode: 136
+Episode 135: 16
+I1116 00:35:56.844064  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [2], score: [21]
+I1116 00:35:56.971110  2356 sc2_env.py:240] Starting episode: 137
+Episode 136: 21
+I1116 00:35:59.822486  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [10]
+I1116 00:35:59.957586  2356 sc2_env.py:240] Starting episode: 138
+Episode 137: 11
+I1116 00:36:09.216649  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [57]
+I1116 00:36:09.360180  2356 sc2_env.py:240] Starting episode: 139
+Episode 138: 57
+I1116 00:36:40.163715  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:36:40.305380  2356 sc2_env.py:240] Starting episode: 140
+Episode 139: 0
+I1116 00:36:56.014135  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:36:56.174566  2356 sc2_env.py:240] Starting episode: 141
+Episode 140: 26
+I1116 00:36:59.001874  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 00:36:59.145284  2356 sc2_env.py:240] Starting episode: 142
+Episode 141: 12
+I1116 00:37:01.293017  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [16]
+I1116 00:37:01.422534  2356 sc2_env.py:240] Starting episode: 143
+Episode 142: 16
+I1116 00:37:10.754638  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [11]
+I1116 00:37:10.896775  2356 sc2_env.py:240] Starting episode: 144
+Episode 143: 11
+I1116 00:37:17.368645  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:37:17.487035  2356 sc2_env.py:240] Starting episode: 145
+Episode 144: 6
+I1116 00:37:22.134953  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [2]
+I1116 00:37:22.255770  2356 sc2_env.py:240] Starting episode: 146
+Episode 145: 2
+I1116 00:37:26.857079  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [22]
+I1116 00:37:26.997759  2356 sc2_env.py:240] Starting episode: 147
+Episode 146: 22
+I1116 00:37:31.237094  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:37:31.363701  2356 sc2_env.py:240] Starting episode: 148
+Episode 147: 21
+I1116 00:38:02.666915  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [3]
+I1116 00:38:02.813816  2356 sc2_env.py:240] Starting episode: 149
+Episode 148: 3
+I1116 00:38:22.467664  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:38:22.612972  2356 sc2_env.py:240] Starting episode: 150
+Episode 149: 6
+I1116 00:38:28.135064  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [22]
+I1116 00:38:28.277276  2356 sc2_env.py:240] Starting episode: 151
+Episode 150: 22
+I1116 00:38:40.260172  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [52]
+I1116 00:38:40.404208  2356 sc2_env.py:240] Starting episode: 152
+Episode 151: 52
+I1116 00:38:44.360966  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [21]
+I1116 00:38:44.488315  2356 sc2_env.py:240] Starting episode: 153
+Episode 152: 21
+I1116 00:39:15.535757  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [3]
+I1116 00:39:15.681965  2356 sc2_env.py:240] Starting episode: 154
+Episode 153: 3
+I1116 00:39:23.614901  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [32]
+I1116 00:39:23.744756  2356 sc2_env.py:240] Starting episode: 155
+Episode 154: 32
+I1116 00:39:28.696276  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [21]
+I1116 00:39:28.823624  2356 sc2_env.py:240] Starting episode: 156
+Episode 155: 21
+I1116 00:39:30.916811  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 00:39:31.041363  2356 sc2_env.py:240] Starting episode: 157
+Episode 156: 12
+I1116 00:40:02.364935  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:40:02.487227  2356 sc2_env.py:240] Starting episode: 158
+Episode 157: 0
+I1116 00:40:33.941341  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [42]
+I1116 00:40:34.072208  2356 sc2_env.py:240] Starting episode: 159
+Episode 158: 42
+I1116 00:40:41.022802  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:40:41.163688  2356 sc2_env.py:240] Starting episode: 160
+Episode 159: 31
+I1116 00:40:48.073919  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:40:48.202190  2356 sc2_env.py:240] Starting episode: 161
+Episode 160: 11
+I1116 00:40:50.718286  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [24]
+I1116 00:40:50.869700  2356 sc2_env.py:240] Starting episode: 162
+Episode 161: 24
+I1116 00:41:21.962468  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [12]
+I1116 00:41:22.093488  2356 sc2_env.py:240] Starting episode: 163
+Episode 162: 12
+I1116 00:41:44.893294  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [2], score: [1]
+I1116 00:41:45.032190  2356 sc2_env.py:240] Starting episode: 164
+Episode 163: 1
+I1116 00:42:02.621598  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:42:02.740641  2356 sc2_env.py:240] Starting episode: 165
+Episode 164: 11
+I1116 00:42:18.638283  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [23]
+I1116 00:42:18.777309  2356 sc2_env.py:240] Starting episode: 166
+Episode 165: 23
+I1116 00:42:29.147875  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [72]
+I1116 00:42:29.274394  2356 sc2_env.py:240] Starting episode: 167
+Episode 166: 72
+I1116 00:42:35.548043  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [63]
+I1116 00:42:35.676031  2356 sc2_env.py:240] Starting episode: 168
+Episode 167: 63
+I1116 00:43:06.935269  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [44]
+I1116 00:43:07.077057  2356 sc2_env.py:240] Starting episode: 169
+Episode 168: 44
+I1116 00:43:13.138303  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [1]
+I1116 00:43:13.282481  2356 sc2_env.py:240] Starting episode: 170
+Episode 169: 1
+I1116 00:43:44.688214  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [32]
+I1116 00:43:44.804209  2356 sc2_env.py:240] Starting episode: 171
+Episode 170: 32
+I1116 00:44:06.244082  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [67]
+I1116 00:44:06.386142  2356 sc2_env.py:240] Starting episode: 172
+Episode 171: 67
+I1116 00:44:21.057749  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:44:21.184733  2356 sc2_env.py:240] Starting episode: 173
+Episode 172: 16
+I1116 00:44:29.716302  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [5], score: [59]
+I1116 00:44:29.851171  2356 sc2_env.py:240] Starting episode: 174
+Episode 173: 59
+I1116 00:44:57.698832  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:44:57.832842  2356 sc2_env.py:240] Starting episode: 175
+Episode 174: 6
+I1116 00:45:29.348136  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [10]
+I1116 00:45:29.506797  2356 sc2_env.py:240] Starting episode: 176
+Episode 175: 10
+I1116 00:45:44.377342  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:45:44.522380  2356 sc2_env.py:240] Starting episode: 177
+Episode 176: 21
+I1116 00:45:51.208964  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [36]
+I1116 00:45:51.367051  2356 sc2_env.py:240] Starting episode: 178
+Episode 177: 36
+I1116 00:46:08.088987  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [27]
+I1116 00:46:08.209296  2356 sc2_env.py:240] Starting episode: 179
+Episode 178: 27
+I1116 00:46:10.591917  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 00:46:10.733005  2356 sc2_env.py:240] Starting episode: 180
+Episode 179: 12
+I1116 00:46:23.683692  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:46:23.802253  2356 sc2_env.py:240] Starting episode: 181
+Episode 180: 26
+I1116 00:46:28.346068  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:46:28.485083  2356 sc2_env.py:240] Starting episode: 182
+Episode 181: 11
+I1116 00:46:35.419337  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:46:35.548324  2356 sc2_env.py:240] Starting episode: 183
+Episode 182: 6
+I1116 00:46:45.142435  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 00:46:45.270452  2356 sc2_env.py:240] Starting episode: 184
+Episode 183: 11
+I1116 00:46:54.830282  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [28]
+I1116 00:46:54.973558  2356 sc2_env.py:240] Starting episode: 185
+Episode 184: 28
+I1116 00:46:57.248149  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:46:57.377502  2356 sc2_env.py:240] Starting episode: 186
+Episode 185: 6
+I1116 00:47:02.130654  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [2], score: [21]
+I1116 00:47:02.272040  2356 sc2_env.py:240] Starting episode: 187
+Episode 186: 21
+I1116 00:47:11.443191  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:47:11.571041  2356 sc2_env.py:240] Starting episode: 188
+Episode 187: 16
+I1116 00:47:25.031462  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [14]
+I1116 00:47:25.161474  2356 sc2_env.py:240] Starting episode: 189
+Episode 188: 14
+I1116 00:47:28.499603  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:47:28.628956  2356 sc2_env.py:240] Starting episode: 190
+Episode 189: 36
+I1116 00:47:35.826619  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 00:47:35.971649  2356 sc2_env.py:240] Starting episode: 191
+Episode 190: 26
+I1116 00:48:04.691908  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:48:04.821208  2356 sc2_env.py:240] Starting episode: 192
+Episode 191: 16
+I1116 00:48:13.382707  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:48:13.506045  2356 sc2_env.py:240] Starting episode: 193
+Episode 192: 16
+I1116 00:48:20.632825  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 00:48:20.752805  2356 sc2_env.py:240] Starting episode: 194
+Episode 193: 26
+I1116 00:48:25.745183  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:48:25.906039  2356 sc2_env.py:240] Starting episode: 195
+Episode 194: 26
+I1116 00:48:36.396009  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:48:36.539045  2356 sc2_env.py:240] Starting episode: 196
+Episode 195: 11
+I1116 00:49:03.093361  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [13], score: [31]
+I1116 00:49:03.221128  2356 sc2_env.py:240] Starting episode: 197
+Episode 196: 31
+I1116 00:49:10.404073  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:49:10.533427  2356 sc2_env.py:240] Starting episode: 198
+Episode 197: 31
+I1116 00:49:41.443044  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:49:41.592089  2356 sc2_env.py:240] Starting episode: 199
+Episode 198: 0
+I1116 00:49:45.002363  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:49:45.135226  2356 sc2_env.py:240] Starting episode: 200
+Episode 199: 16
+I1116 00:49:57.335941  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:49:57.471980  2356 sc2_env.py:240] Starting episode: 201
+Episode 200: 16
+I1116 00:50:03.166836  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:50:03.288190  2356 sc2_env.py:240] Starting episode: 202
+Episode 201: 6
+I1116 00:50:15.173830  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:50:15.300315  2356 sc2_env.py:240] Starting episode: 203
+Episode 202: 11
+I1116 00:50:29.385136  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [27]
+I1116 00:50:29.543414  2356 sc2_env.py:240] Starting episode: 204
+Episode 203: 27
+I1116 00:50:39.119449  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 00:50:39.248457  2356 sc2_env.py:240] Starting episode: 205
+Episode 204: 1
+I1116 00:51:10.391149  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [18]
+I1116 00:51:10.521232  2356 sc2_env.py:240] Starting episode: 206
+Episode 205: 18
+I1116 00:51:14.840092  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [26]
+I1116 00:51:14.977612  2356 sc2_env.py:240] Starting episode: 207
+Episode 206: 26
+I1116 00:51:46.337042  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:51:46.483458  2356 sc2_env.py:240] Starting episode: 208
+Episode 207: 0
+I1116 00:51:56.885631  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [33]
+I1116 00:51:57.024943  2356 sc2_env.py:240] Starting episode: 209
+Episode 208: 33
+I1116 00:52:04.017448  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [22]
+I1116 00:52:04.158129  2356 sc2_env.py:240] Starting episode: 210
+Episode 209: 22
+I1116 00:52:12.051646  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [27]
+I1116 00:52:12.180999  2356 sc2_env.py:240] Starting episode: 211
+Episode 210: 27
+I1116 00:52:18.969134  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:52:19.095980  2356 sc2_env.py:240] Starting episode: 212
+Episode 211: 36
+I1116 00:52:35.536704  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [103]
+I1116 00:52:35.681247  2356 sc2_env.py:240] Starting episode: 213
+Episode 212: 103
+I1116 00:52:42.516907  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [58]
+I1116 00:52:42.643989  2356 sc2_env.py:240] Starting episode: 214
+Episode 213: 58
+I1116 00:52:50.987312  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:52:51.124186  2356 sc2_env.py:240] Starting episode: 215
+Episode 214: 16
+I1116 00:53:22.140476  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [7]
+I1116 00:53:22.273560  2356 sc2_env.py:240] Starting episode: 216
+Episode 215: 7
+I1116 00:53:32.306543  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [6], score: [31]
+I1116 00:53:32.430821  2356 sc2_env.py:240] Starting episode: 217
+Episode 216: 31
+I1116 00:53:43.606484  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 00:53:43.722870  2356 sc2_env.py:240] Starting episode: 218
+Episode 217: 11
+I1116 00:53:51.305750  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 00:53:51.435390  2356 sc2_env.py:240] Starting episode: 219
+Episode 218: 36
+I1116 00:54:01.327486  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [28]
+I1116 00:54:01.468527  2356 sc2_env.py:240] Starting episode: 220
+Episode 219: 28
+I1116 00:54:07.268889  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 00:54:07.416215  2356 sc2_env.py:240] Starting episode: 221
+Episode 220: 16
+I1116 00:54:11.792186  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:54:11.939247  2356 sc2_env.py:240] Starting episode: 222
+Episode 221: 26
+I1116 00:54:14.852622  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:54:14.978618  2356 sc2_env.py:240] Starting episode: 223
+Episode 222: 21
+I1116 00:54:19.715055  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:54:19.853935  2356 sc2_env.py:240] Starting episode: 224
+Episode 223: 26
+I1116 00:54:29.604650  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [26]
+I1116 00:54:29.748058  2356 sc2_env.py:240] Starting episode: 225
+Episode 224: 26
+I1116 00:55:00.222062  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:55:00.365348  2356 sc2_env.py:240] Starting episode: 226
+Episode 225: 21
+I1116 00:55:12.288744  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [72]
+I1116 00:55:12.405062  2356 sc2_env.py:240] Starting episode: 227
+Episode 226: 72
+I1116 00:55:34.960746  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [67]
+I1116 00:55:35.108106  2356 sc2_env.py:240] Starting episode: 228
+Episode 227: 67
+I1116 00:55:48.833600  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [8], score: [27]
+I1116 00:55:48.950420  2356 sc2_env.py:240] Starting episode: 229
+Episode 228: 27
+I1116 00:55:53.213325  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:55:53.346426  2356 sc2_env.py:240] Starting episode: 230
+Episode 229: 26
+I1116 00:56:24.655114  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [46]
+I1116 00:56:24.797142  2356 sc2_env.py:240] Starting episode: 231
+Episode 230: 46
+I1116 00:56:55.750077  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:56:55.882608  2356 sc2_env.py:240] Starting episode: 232
+Episode 231: 0
+I1116 00:57:27.129550  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 00:57:27.260519  2356 sc2_env.py:240] Starting episode: 233
+Episode 232: 0
+I1116 00:57:32.801769  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 00:57:32.928615  2356 sc2_env.py:240] Starting episode: 234
+Episode 233: 31
+I1116 00:57:42.953811  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:57:43.096342  2356 sc2_env.py:240] Starting episode: 235
+Episode 234: 21
+I1116 00:57:48.284360  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [15]
+I1116 00:57:48.426409  2356 sc2_env.py:240] Starting episode: 236
+Episode 235: 15
+I1116 00:57:55.958617  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 00:57:56.098713  2356 sc2_env.py:240] Starting episode: 237
+Episode 236: 6
+I1116 00:58:04.053451  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 00:58:04.172276  2356 sc2_env.py:240] Starting episode: 238
+Episode 237: 11
+I1116 00:58:15.269649  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:58:15.399125  2356 sc2_env.py:240] Starting episode: 239
+Episode 238: 21
+I1116 00:58:36.896492  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:58:37.029531  2356 sc2_env.py:240] Starting episode: 240
+Episode 239: 31
+I1116 00:58:50.429554  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [22]
+I1116 00:58:50.571206  2356 sc2_env.py:240] Starting episode: 241
+Episode 240: 22
+I1116 00:59:01.582329  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [29]
+I1116 00:59:01.717699  2356 sc2_env.py:240] Starting episode: 242
+Episode 241: 29
+I1116 00:59:03.432223  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [6], score: [12]
+I1116 00:59:03.580907  2356 sc2_env.py:240] Starting episode: 243
+Episode 242: 12
+I1116 00:59:08.965801  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 00:59:09.082119  2356 sc2_env.py:240] Starting episode: 244
+Episode 243: 6
+I1116 00:59:18.433955  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 00:59:18.566934  2356 sc2_env.py:240] Starting episode: 245
+Episode 244: 31
+I1116 00:59:21.583812  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [14]
+I1116 00:59:21.724196  2356 sc2_env.py:240] Starting episode: 246
+Episode 245: 14
+I1116 00:59:27.860435  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 00:59:27.989788  2356 sc2_env.py:240] Starting episode: 247
+Episode 246: 26
+I1116 00:59:34.993026  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 00:59:35.138196  2356 sc2_env.py:240] Starting episode: 248
+Episode 247: 21
+I1116 01:00:06.560054  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [42]
+I1116 01:00:06.689831  2356 sc2_env.py:240] Starting episode: 249
+Episode 248: 42
+I1116 01:00:32.131528  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [62]
+I1116 01:00:32.291183  2356 sc2_env.py:240] Starting episode: 250
+Episode 249: 62
+I1116 01:00:40.400079  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [57]
+I1116 01:00:40.543983  2356 sc2_env.py:240] Starting episode: 251
+Episode 250: 57
+I1116 01:00:44.301456  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 01:00:44.418227  2356 sc2_env.py:240] Starting episode: 252
+Episode 251: 31
+I1116 01:01:15.260045  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:01:15.404438  2356 sc2_env.py:240] Starting episode: 253
+Episode 252: 0
+I1116 01:01:21.791346  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 01:01:21.952065  2356 sc2_env.py:240] Starting episode: 254
+Episode 253: 36
+I1116 01:01:43.936112  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [29]
+I1116 01:01:44.076791  2356 sc2_env.py:240] Starting episode: 255
+Episode 254: 29
+I1116 01:02:15.579766  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:02:15.726166  2356 sc2_env.py:240] Starting episode: 256
+Episode 255: 0
+I1116 01:02:47.419668  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [38]
+I1116 01:02:47.558183  2356 sc2_env.py:240] Starting episode: 257
+Episode 256: 38
+I1116 01:02:56.860919  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [11]
+I1116 01:02:57.002444  2356 sc2_env.py:240] Starting episode: 258
+Episode 257: 11
+I1116 01:03:19.859318  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 01:03:20.001847  2356 sc2_env.py:240] Starting episode: 259
+Episode 258: 31
+I1116 01:03:25.000787  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [35]
+I1116 01:03:25.140817  2356 sc2_env.py:240] Starting episode: 260
+Episode 259: 35
+I1116 01:03:41.376842  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 01:03:41.505880  2356 sc2_env.py:240] Starting episode: 261
+Episode 260: 36
+I1116 01:03:57.902374  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:03:58.031666  2356 sc2_env.py:240] Starting episode: 262
+Episode 261: 21
+I1116 01:04:06.174941  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:04:06.316582  2356 sc2_env.py:240] Starting episode: 263
+Episode 262: 21
+I1116 01:04:12.582083  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:04:12.727176  2356 sc2_env.py:240] Starting episode: 264
+Episode 263: 31
+I1116 01:04:19.203030  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [10]
+I1116 01:04:19.328082  2356 sc2_env.py:240] Starting episode: 265
+Episode 264: 10
+I1116 01:04:33.377338  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 01:04:33.523560  2356 sc2_env.py:240] Starting episode: 266
+Episode 265: 36
+I1116 01:04:40.042994  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:04:40.175994  2356 sc2_env.py:240] Starting episode: 267
+Episode 266: 21
+I1116 01:04:45.204623  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [5]
+I1116 01:04:45.342129  2356 sc2_env.py:240] Starting episode: 268
+Episode 267: 5
+I1116 01:04:52.754709  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:04:52.883826  2356 sc2_env.py:240] Starting episode: 269
+Episode 268: 26
+I1116 01:05:05.602208  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:05:05.744796  2356 sc2_env.py:240] Starting episode: 270
+Episode 269: 26
+I1116 01:05:09.639857  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 01:05:09.759348  2356 sc2_env.py:240] Starting episode: 271
+Episode 270: 36
+I1116 01:05:16.050179  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 01:05:16.194880  2356 sc2_env.py:240] Starting episode: 272
+Episode 271: 11
+I1116 01:05:28.113407  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:05:28.259951  2356 sc2_env.py:240] Starting episode: 273
+Episode 272: 21
+I1116 01:05:37.571254  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [57]
+I1116 01:05:37.702770  2356 sc2_env.py:240] Starting episode: 274
+Episode 273: 57
+I1116 01:05:49.980192  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [62]
+I1116 01:05:50.110047  2356 sc2_env.py:240] Starting episode: 275
+Episode 274: 62
+I1116 01:06:21.503766  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:06:21.634123  2356 sc2_env.py:240] Starting episode: 276
+Episode 275: 0
+I1116 01:06:29.818306  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [8]
+I1116 01:06:29.940087  2356 sc2_env.py:240] Starting episode: 277
+Episode 276: 8
+I1116 01:06:33.627518  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:06:33.769872  2356 sc2_env.py:240] Starting episode: 278
+Episode 277: 21
+I1116 01:06:41.362700  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 01:06:41.491552  2356 sc2_env.py:240] Starting episode: 279
+Episode 278: 26
+I1116 01:06:45.216088  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 01:06:45.360482  2356 sc2_env.py:240] Starting episode: 280
+Episode 279: 1
+I1116 01:06:48.690230  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:06:48.834124  2356 sc2_env.py:240] Starting episode: 281
+Episode 280: 6
+I1116 01:06:55.533635  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:06:55.670668  2356 sc2_env.py:240] Starting episode: 282
+Episode 281: 26
+I1116 01:07:00.009277  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [30]
+I1116 01:07:00.143203  2356 sc2_env.py:240] Starting episode: 283
+Episode 282: 30
+I1116 01:07:09.441744  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [17]
+I1116 01:07:09.575610  2356 sc2_env.py:240] Starting episode: 284
+Episode 283: 17
+I1116 01:07:17.921988  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:07:18.060753  2356 sc2_env.py:240] Starting episode: 285
+Episode 284: 31
+I1116 01:07:38.598032  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [72]
+I1116 01:07:38.739187  2356 sc2_env.py:240] Starting episode: 286
+Episode 285: 72
+I1116 01:07:42.961520  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:07:43.089370  2356 sc2_env.py:240] Starting episode: 287
+Episode 286: 11
+I1116 01:07:47.047487  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:07:47.207060  2356 sc2_env.py:240] Starting episode: 288
+Episode 287: 11
+I1116 01:08:16.495180  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [14]
+I1116 01:08:16.632844  2356 sc2_env.py:240] Starting episode: 289
+Episode 288: 14
+I1116 01:08:48.102962  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [22]
+I1116 01:08:48.248359  2356 sc2_env.py:240] Starting episode: 290
+Episode 289: 22
+I1116 01:08:53.833263  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:08:53.991132  2356 sc2_env.py:240] Starting episode: 291
+Episode 290: 21
+I1116 01:09:18.115660  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:09:18.260556  2356 sc2_env.py:240] Starting episode: 292
+Episode 291: 31
+I1116 01:09:37.530252  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [58]
+I1116 01:09:37.673143  2356 sc2_env.py:240] Starting episode: 293
+Episode 292: 58
+I1116 01:10:09.537903  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [7]
+I1116 01:10:09.683655  2356 sc2_env.py:240] Starting episode: 294
+Episode 293: 7
+I1116 01:10:39.763910  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [8]
+I1116 01:10:39.890689  2356 sc2_env.py:240] Starting episode: 295
+Episode 294: 8
+I1116 01:10:44.359237  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:10:44.496271  2356 sc2_env.py:240] Starting episode: 296
+Episode 295: 21
+I1116 01:11:16.348359  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [13]
+I1116 01:11:16.478738  2356 sc2_env.py:240] Starting episode: 297
+Episode 296: 13
+I1116 01:11:30.580266  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [9]
+I1116 01:11:30.718696  2356 sc2_env.py:240] Starting episode: 298
+Episode 297: 9
+I1116 01:12:03.238438  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [43]
+I1116 01:12:03.369948  2356 sc2_env.py:240] Starting episode: 299
+Episode 298: 43
+I1116 01:12:11.443888  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:12:11.589285  2356 sc2_env.py:240] Starting episode: 300
+Episode 299: 11
+I1116 01:12:15.435939  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:12:15.579708  2356 sc2_env.py:240] Starting episode: 301
+Episode 300: 26
+I1116 01:12:27.720779  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [31]
+I1116 01:12:27.859025  2356 sc2_env.py:240] Starting episode: 302
+Episode 301: 31
+I1116 01:12:36.963044  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [18]
+I1116 01:12:37.117466  2356 sc2_env.py:240] Starting episode: 303
+Episode 302: 18
+I1116 01:13:08.879275  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:13:09.041610  2356 sc2_env.py:240] Starting episode: 304
+Episode 303: 0
+I1116 01:13:11.705500  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:13:11.850397  2356 sc2_env.py:240] Starting episode: 305
+Episode 304: 26
+I1116 01:13:43.320641  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [7]
+I1116 01:13:43.482222  2356 sc2_env.py:240] Starting episode: 306
+Episode 305: 7
+I1116 01:13:46.723946  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 01:13:46.851966  2356 sc2_env.py:240] Starting episode: 307
+Episode 306: 12
+I1116 01:13:50.609635  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [39]
+I1116 01:13:50.767466  2356 sc2_env.py:240] Starting episode: 308
+Episode 307: 39
+I1116 01:14:22.296166  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:14:22.442857  2356 sc2_env.py:240] Starting episode: 309
+Episode 308: 0
+I1116 01:14:26.722594  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:14:26.858465  2356 sc2_env.py:240] Starting episode: 310
+Episode 309: 26
+I1116 01:14:43.837888  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [27]
+I1116 01:14:43.979274  2356 sc2_env.py:240] Starting episode: 311
+Episode 310: 27
+I1116 01:14:50.211296  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:14:50.334745  2356 sc2_env.py:240] Starting episode: 312
+Episode 311: 26
+I1116 01:15:06.321947  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:15:06.438713  2356 sc2_env.py:240] Starting episode: 313
+Episode 312: 31
+I1116 01:15:37.966021  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [3]
+I1116 01:15:38.108912  2356 sc2_env.py:240] Starting episode: 314
+Episode 313: 3
+I1116 01:15:44.811192  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:15:44.940546  2356 sc2_env.py:240] Starting episode: 315
+Episode 314: 26
+I1116 01:15:54.333135  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 01:15:54.476731  2356 sc2_env.py:240] Starting episode: 316
+Episode 315: 31
+I1116 01:16:10.484416  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 01:16:10.605929  2356 sc2_env.py:240] Starting episode: 317
+Episode 316: 6
+I1116 01:16:17.593957  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:16:17.736725  2356 sc2_env.py:240] Starting episode: 318
+Episode 317: 31
+I1116 01:16:28.527909  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [16]
+I1116 01:16:28.655898  2356 sc2_env.py:240] Starting episode: 319
+Episode 318: 16
+I1116 01:17:00.072982  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [37]
+I1116 01:17:00.217536  2356 sc2_env.py:240] Starting episode: 320
+Episode 319: 37
+I1116 01:17:06.989335  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:17:07.134873  2356 sc2_env.py:240] Starting episode: 321
+Episode 320: 21
+I1116 01:17:15.047004  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:17:15.173257  2356 sc2_env.py:240] Starting episode: 322
+Episode 321: 21
+I1116 01:17:36.453762  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [17]
+I1116 01:17:36.595381  2356 sc2_env.py:240] Starting episode: 323
+Episode 322: 17
+I1116 01:18:08.045579  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:18:08.175935  2356 sc2_env.py:240] Starting episode: 324
+Episode 323: 0
+I1116 01:18:11.837382  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 01:18:11.981772  2356 sc2_env.py:240] Starting episode: 325
+Episode 324: 1
+I1116 01:18:16.061933  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:18:16.205558  2356 sc2_env.py:240] Starting episode: 326
+Episode 325: 16
+I1116 01:18:38.112567  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [59]
+I1116 01:18:38.252951  2356 sc2_env.py:240] Starting episode: 327
+Episode 326: 59
+I1116 01:18:39.865416  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [13]
+I1116 01:18:39.993431  2356 sc2_env.py:240] Starting episode: 328
+Episode 327: 13
+I1116 01:19:11.169459  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:19:11.300316  2356 sc2_env.py:240] Starting episode: 329
+Episode 328: 0
+I1116 01:19:19.953742  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:19:20.077080  2356 sc2_env.py:240] Starting episode: 330
+Episode 329: 31
+I1116 01:19:23.513585  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [10]
+I1116 01:19:23.653963  2356 sc2_env.py:240] Starting episode: 331
+Episode 330: 10
+I1116 01:19:39.378343  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [32]
+I1116 01:19:39.522395  2356 sc2_env.py:240] Starting episode: 332
+Episode 331: 32
+I1116 01:19:50.388618  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:19:50.546506  2356 sc2_env.py:240] Starting episode: 333
+Episode 332: 26
+I1116 01:20:06.975855  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:20:07.120751  2356 sc2_env.py:240] Starting episode: 334
+Episode 333: 6
+I1116 01:20:38.674256  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [8], score: [26]
+I1116 01:20:38.813637  2356 sc2_env.py:240] Starting episode: 335
+Episode 334: 26
+I1116 01:20:46.252183  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:20:46.392148  2356 sc2_env.py:240] Starting episode: 336
+Episode 335: 6
+I1116 01:21:18.184003  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [43]
+I1116 01:21:18.331406  2356 sc2_env.py:240] Starting episode: 337
+Episode 336: 43
+I1116 01:21:34.618266  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 01:21:34.759302  2356 sc2_env.py:240] Starting episode: 338
+Episode 337: 26
+I1116 01:21:38.451627  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [17]
+I1116 01:21:44.009535  2356 sc2_env.py:240] Starting episode: 339
+Episode 338: 17
+I1116 01:22:12.206376  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [34]
+I1116 01:22:12.342749  2356 sc2_env.py:240] Starting episode: 340
+Episode 339: 34
+I1116 01:22:43.931131  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:22:44.077455  2356 sc2_env.py:240] Starting episode: 341
+Episode 340: 0
+I1116 01:22:52.568104  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:22:52.697105  2356 sc2_env.py:240] Starting episode: 342
+Episode 341: 6
+I1116 01:22:58.192350  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [22]
+I1116 01:22:58.329416  2356 sc2_env.py:240] Starting episode: 343
+Episode 342: 22
+I1116 01:23:09.790386  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [6], score: [69]
+I1116 01:23:09.942318  2356 sc2_env.py:240] Starting episode: 344
+Episode 343: 69
+I1116 01:23:41.432808  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:23:41.553787  2356 sc2_env.py:240] Starting episode: 345
+Episode 344: 0
+I1116 01:23:54.244772  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [25]
+I1116 01:23:54.382650  2356 sc2_env.py:240] Starting episode: 346
+Episode 345: 25
+I1116 01:24:24.928024  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:24:25.067054  2356 sc2_env.py:240] Starting episode: 347
+Episode 346: 0
+I1116 01:24:43.842422  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:24:43.967922  2356 sc2_env.py:240] Starting episode: 348
+Episode 347: 11
+I1116 01:24:53.490574  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:24:53.627083  2356 sc2_env.py:240] Starting episode: 349
+Episode 348: 21
+I1116 01:24:57.893711  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 01:24:58.028862  2356 sc2_env.py:240] Starting episode: 350
+Episode 349: 36
+I1116 01:25:17.707480  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [13]
+I1116 01:25:17.832832  2356 sc2_env.py:240] Starting episode: 351
+Episode 350: 13
+I1116 01:25:23.624841  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:25:23.754827  2356 sc2_env.py:240] Starting episode: 352
+Episode 351: 11
+I1116 01:25:27.975456  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [35]
+I1116 01:25:28.115348  2356 sc2_env.py:240] Starting episode: 353
+Episode 352: 35
+I1116 01:25:48.472061  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [82]
+I1116 01:25:48.610103  2356 sc2_env.py:240] Starting episode: 354
+Episode 353: 82
+I1116 01:25:56.715977  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 01:25:56.844982  2356 sc2_env.py:240] Starting episode: 355
+Episode 354: 1
+I1116 01:26:27.131884  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:26:27.264807  2356 sc2_env.py:240] Starting episode: 356
+Episode 355: 0
+I1116 01:26:57.907026  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [6]
+I1116 01:26:58.038386  2356 sc2_env.py:240] Starting episode: 357
+Episode 356: 6
+I1116 01:27:29.076254  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [44]
+I1116 01:27:29.222924  2356 sc2_env.py:240] Starting episode: 358
+Episode 357: 44
+I1116 01:27:30.825304  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [6]
+I1116 01:27:30.958308  2356 sc2_env.py:240] Starting episode: 359
+Episode 358: 6
+I1116 01:27:52.973783  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [53]
+I1116 01:27:53.116834  2356 sc2_env.py:240] Starting episode: 360
+Episode 359: 53
+I1116 01:28:24.211842  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:28:24.337343  2356 sc2_env.py:240] Starting episode: 361
+Episode 360: 0
+I1116 01:28:26.556087  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:28:26.672904  2356 sc2_env.py:240] Starting episode: 362
+Episode 361: 6
+I1116 01:28:33.948732  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [21]
+I1116 01:28:34.067425  2356 sc2_env.py:240] Starting episode: 363
+Episode 362: 21
+I1116 01:28:47.066515  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:28:47.203535  2356 sc2_env.py:240] Starting episode: 364
+Episode 363: 31
+I1116 01:29:01.872082  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:29:02.019485  2356 sc2_env.py:240] Starting episode: 365
+Episode 364: 21
+I1116 01:29:32.897413  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [4], score: [8]
+I1116 01:29:33.041305  2356 sc2_env.py:240] Starting episode: 366
+Episode 365: 8
+I1116 01:29:48.132030  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:29:48.258877  2356 sc2_env.py:240] Starting episode: 367
+Episode 366: 21
+I1116 01:29:54.678917  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:29:54.837567  2356 sc2_env.py:240] Starting episode: 368
+Episode 367: 6
+I1116 01:30:25.990034  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:30:26.129117  2356 sc2_env.py:240] Starting episode: 369
+Episode 368: 0
+I1116 01:30:35.175414  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 01:30:35.318477  2356 sc2_env.py:240] Starting episode: 370
+Episode 369: 31
+I1116 01:30:38.642500  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:30:38.788400  2356 sc2_env.py:240] Starting episode: 371
+Episode 370: 26
+I1116 01:30:58.077540  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:30:58.203535  2356 sc2_env.py:240] Starting episode: 372
+Episode 371: 16
+I1116 01:31:29.028258  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [16]
+I1116 01:31:29.174157  2356 sc2_env.py:240] Starting episode: 373
+Episode 372: 16
+I1116 01:32:00.287711  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:32:00.431420  2356 sc2_env.py:240] Starting episode: 374
+Episode 373: 0
+I1116 01:32:31.529155  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [45]
+I1116 01:32:31.659276  2356 sc2_env.py:240] Starting episode: 375
+Episode 374: 45
+I1116 01:32:36.123414  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [8]
+I1116 01:32:36.282062  2356 sc2_env.py:240] Starting episode: 376
+Episode 375: 8
+I1116 01:32:56.994307  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [67]
+I1116 01:32:57.114636  2356 sc2_env.py:240] Starting episode: 377
+Episode 376: 67
+I1116 01:33:06.488097  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [27]
+I1116 01:33:06.613087  2356 sc2_env.py:240] Starting episode: 378
+Episode 377: 27
+I1116 01:33:21.498429  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [11]
+I1116 01:33:21.626932  2356 sc2_env.py:240] Starting episode: 379
+Episode 378: 11
+I1116 01:33:26.560878  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:33:26.711027  2356 sc2_env.py:240] Starting episode: 380
+Episode 379: 26
+I1116 01:33:39.716589  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [37]
+I1116 01:33:39.858334  2356 sc2_env.py:240] Starting episode: 381
+Episode 380: 37
+I1116 01:33:52.115443  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 01:33:52.253709  2356 sc2_env.py:240] Starting episode: 382
+Episode 381: 6
+I1116 01:34:07.635766  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:34:07.779795  2356 sc2_env.py:240] Starting episode: 383
+Episode 382: 11
+I1116 01:34:13.286853  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:34:13.415023  2356 sc2_env.py:240] Starting episode: 384
+Episode 383: 21
+I1116 01:34:19.316699  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:34:19.454870  2356 sc2_env.py:240] Starting episode: 385
+Episode 384: 16
+I1116 01:34:38.166035  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [52]
+I1116 01:34:38.293886  2356 sc2_env.py:240] Starting episode: 386
+Episode 385: 52
+I1116 01:35:08.925246  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:35:09.053119  2356 sc2_env.py:240] Starting episode: 387
+Episode 386: 0
+I1116 01:35:11.174035  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 01:35:11.299513  2356 sc2_env.py:240] Starting episode: 388
+Episode 387: 26
+I1116 01:35:14.780452  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:35:14.905430  2356 sc2_env.py:240] Starting episode: 389
+Episode 388: 21
+I1116 01:35:20.709336  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [16]
+I1116 01:35:20.849544  2356 sc2_env.py:240] Starting episode: 390
+Episode 389: 16
+I1116 01:35:34.318938  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [28]
+I1116 01:35:34.454791  2356 sc2_env.py:240] Starting episode: 391
+Episode 390: 28
+I1116 01:35:41.096061  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 01:35:41.223408  2356 sc2_env.py:240] Starting episode: 392
+Episode 391: 1
+I1116 01:35:55.138338  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:35:55.266213  2356 sc2_env.py:240] Starting episode: 393
+Episode 392: 26
+I1116 01:36:25.892902  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [15]
+I1116 01:36:26.022395  2356 sc2_env.py:240] Starting episode: 394
+Episode 393: 15
+I1116 01:36:36.638965  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [26]
+I1116 01:36:36.796238  2356 sc2_env.py:240] Starting episode: 395
+Episode 394: 26
+I1116 01:37:07.341232  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [41]
+I1116 01:37:07.456723  2356 sc2_env.py:240] Starting episode: 396
+Episode 395: 41
+I1116 01:37:11.953229  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 01:37:12.096901  2356 sc2_env.py:240] Starting episode: 397
+Episode 396: 26
+I1116 01:37:35.628167  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:37:35.769369  2356 sc2_env.py:240] Starting episode: 398
+Episode 397: 6
+I1116 01:37:55.489369  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [57]
+I1116 01:37:55.635268  2356 sc2_env.py:240] Starting episode: 399
+Episode 398: 57
+I1116 01:38:11.078630  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:38:11.207703  2356 sc2_env.py:240] Starting episode: 400
+Episode 399: 21
+I1116 01:38:27.321867  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:38:27.437797  2356 sc2_env.py:240] Starting episode: 401
+Episode 400: 26
+I1116 01:38:40.461827  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [62]
+I1116 01:38:40.618595  2356 sc2_env.py:240] Starting episode: 402
+Episode 401: 62
+I1116 01:38:46.002719  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:38:46.117532  2356 sc2_env.py:240] Starting episode: 403
+Episode 402: 31
+I1116 01:38:57.661533  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [54]
+I1116 01:38:57.801415  2356 sc2_env.py:240] Starting episode: 404
+Episode 403: 54
+I1116 01:39:13.790222  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 01:39:13.931265  2356 sc2_env.py:240] Starting episode: 405
+Episode 404: 26
+I1116 01:39:26.272337  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [22]
+I1116 01:39:26.411842  2356 sc2_env.py:240] Starting episode: 406
+Episode 405: 22
+I1116 01:39:57.197601  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:39:57.328960  2356 sc2_env.py:240] Starting episode: 407
+Episode 406: 0
+I1116 01:40:27.843397  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [39]
+I1116 01:40:27.971956  2356 sc2_env.py:240] Starting episode: 408
+Episode 407: 39
+I1116 01:40:32.094874  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [8]
+I1116 01:40:32.233753  2356 sc2_env.py:240] Starting episode: 409
+Episode 408: 8
+I1116 01:40:49.735769  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 01:40:49.849091  2356 sc2_env.py:240] Starting episode: 410
+Episode 409: 36
+I1116 01:41:09.709341  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [49]
+I1116 01:41:09.846216  2356 sc2_env.py:240] Starting episode: 411
+Episode 410: 49
+I1116 01:41:21.754903  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [52]
+I1116 01:41:21.879056  2356 sc2_env.py:240] Starting episode: 412
+Episode 411: 52
+I1116 01:41:46.889169  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:41:47.019101  2356 sc2_env.py:240] Starting episode: 413
+Episode 412: 26
+I1116 01:41:55.742696  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [24]
+I1116 01:41:55.897117  2356 sc2_env.py:240] Starting episode: 414
+Episode 413: 24
+I1116 01:42:02.011232  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [21]
+I1116 01:42:02.140262  2356 sc2_env.py:240] Starting episode: 415
+Episode 414: 21
+I1116 01:42:06.035859  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:42:06.177883  2356 sc2_env.py:240] Starting episode: 416
+Episode 415: 21
+I1116 01:42:15.927416  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:42:16.072359  2356 sc2_env.py:240] Starting episode: 417
+Episode 416: 31
+I1116 01:42:35.354917  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [82]
+I1116 01:42:35.499470  2356 sc2_env.py:240] Starting episode: 418
+Episode 417: 82
+I1116 01:42:42.867436  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 01:42:43.005106  2356 sc2_env.py:240] Starting episode: 419
+Episode 418: 21
+I1116 01:42:47.294907  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:42:47.423759  2356 sc2_env.py:240] Starting episode: 420
+Episode 419: 26
+I1116 01:43:18.370555  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:43:18.500911  2356 sc2_env.py:240] Starting episode: 421
+Episode 420: 0
+I1116 01:43:34.580739  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [25]
+I1116 01:43:34.707585  2356 sc2_env.py:240] Starting episode: 422
+Episode 421: 25
+I1116 01:43:39.212181  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [8]
+I1116 01:43:39.335008  2356 sc2_env.py:240] Starting episode: 423
+Episode 422: 8
+I1116 01:43:52.964880  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:43:53.096878  2356 sc2_env.py:240] Starting episode: 424
+Episode 423: 26
+I1116 01:43:58.620805  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:43:58.737280  2356 sc2_env.py:240] Starting episode: 425
+Episode 424: 26
+I1116 01:44:02.378588  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:44:02.531282  2356 sc2_env.py:240] Starting episode: 426
+Episode 425: 11
+I1116 01:44:33.247920  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:44:33.393622  2356 sc2_env.py:240] Starting episode: 427
+Episode 426: 0
+I1116 01:45:03.959178  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:45:04.090538  2356 sc2_env.py:240] Starting episode: 428
+Episode 427: 0
+I1116 01:45:09.658437  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:45:09.804005  2356 sc2_env.py:240] Starting episode: 429
+Episode 428: 6
+I1116 01:45:40.339196  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [8]
+I1116 01:45:40.469029  2356 sc2_env.py:240] Starting episode: 430
+Episode 429: 8
+I1116 01:45:49.104024  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:45:49.244767  2356 sc2_env.py:240] Starting episode: 431
+Episode 430: 6
+I1116 01:45:54.365882  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:45:54.510091  2356 sc2_env.py:240] Starting episode: 432
+Episode 431: 31
+I1116 01:46:08.037829  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:46:08.152853  2356 sc2_env.py:240] Starting episode: 433
+Episode 432: 16
+I1116 01:46:12.349540  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [21]
+I1116 01:46:12.473880  2356 sc2_env.py:240] Starting episode: 434
+Episode 433: 21
+I1116 01:46:25.607303  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 01:46:25.750516  2356 sc2_env.py:240] Starting episode: 435
+Episode 434: 6
+I1116 01:46:29.321648  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:46:29.463536  2356 sc2_env.py:240] Starting episode: 436
+Episode 435: 11
+I1116 01:46:38.302922  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:46:38.429768  2356 sc2_env.py:240] Starting episode: 437
+Episode 436: 26
+I1116 01:46:41.350333  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:46:41.494728  2356 sc2_env.py:240] Starting episode: 438
+Episode 437: 16
+I1116 01:46:46.222321  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:46:46.367719  2356 sc2_env.py:240] Starting episode: 439
+Episode 438: 26
+I1116 01:47:03.164720  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [57]
+I1116 01:47:03.299500  2356 sc2_env.py:240] Starting episode: 440
+Episode 439: 57
+I1116 01:47:33.993195  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [10]
+I1116 01:47:34.124197  2356 sc2_env.py:240] Starting episode: 441
+Episode 440: 10
+I1116 01:47:46.106584  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [47]
+I1116 01:47:46.233056  2356 sc2_env.py:240] Starting episode: 442
+Episode 441: 47
+I1116 01:48:16.802422  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:48:16.935423  2356 sc2_env.py:240] Starting episode: 443
+Episode 442: 0
+I1116 01:48:20.639359  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:48:20.771872  2356 sc2_env.py:240] Starting episode: 444
+Episode 443: 16
+I1116 01:48:30.811759  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:48:30.936312  2356 sc2_env.py:240] Starting episode: 445
+Episode 444: 16
+I1116 01:48:44.755124  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:48:44.884612  2356 sc2_env.py:240] Starting episode: 446
+Episode 445: 26
+I1116 01:48:46.910373  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:48:47.054426  2356 sc2_env.py:240] Starting episode: 447
+Episode 446: 11
+I1116 01:48:55.003110  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 01:48:55.161830  2356 sc2_env.py:240] Starting episode: 448
+Episode 447: 11
+I1116 01:49:25.729231  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:49:25.860728  2356 sc2_env.py:240] Starting episode: 449
+Episode 448: 0
+I1116 01:49:28.669378  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:49:28.813910  2356 sc2_env.py:240] Starting episode: 450
+Episode 449: 26
+I1116 01:49:32.297864  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:49:32.442560  2356 sc2_env.py:240] Starting episode: 451
+Episode 450: 11
+I1116 01:49:35.674744  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [36]
+I1116 01:49:35.813283  2356 sc2_env.py:240] Starting episode: 452
+Episode 451: 36
+I1116 01:49:45.978394  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:49:46.109387  2356 sc2_env.py:240] Starting episode: 453
+Episode 452: 16
+I1116 01:49:49.088742  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 01:49:49.232635  2356 sc2_env.py:240] Starting episode: 454
+Episode 453: 6
+I1116 01:50:00.657062  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [63]
+I1116 01:50:00.801958  2356 sc2_env.py:240] Starting episode: 455
+Episode 454: 63
+I1116 01:50:06.443341  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:50:06.558366  2356 sc2_env.py:240] Starting episode: 456
+Episode 455: 31
+I1116 01:50:13.131157  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 01:50:13.246994  2356 sc2_env.py:240] Starting episode: 457
+Episode 456: 26
+I1116 01:50:44.056509  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:50:44.177841  2356 sc2_env.py:240] Starting episode: 458
+Episode 457: 0
+I1116 01:51:04.139190  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 01:51:04.279562  2356 sc2_env.py:240] Starting episode: 459
+Episode 458: 16
+I1116 01:51:34.993320  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [3]
+I1116 01:51:35.123331  2356 sc2_env.py:240] Starting episode: 460
+Episode 459: 3
+I1116 01:51:50.545849  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:51:50.680427  2356 sc2_env.py:240] Starting episode: 461
+Episode 460: 26
+I1116 01:52:21.381784  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:52:21.513585  2356 sc2_env.py:240] Starting episode: 462
+Episode 461: 0
+I1116 01:52:27.003609  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [13]
+I1116 01:52:27.144970  2356 sc2_env.py:240] Starting episode: 463
+Episode 462: 13
+I1116 01:52:35.131648  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 01:52:35.271166  2356 sc2_env.py:240] Starting episode: 464
+Episode 463: 12
+I1116 01:53:06.152225  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:53:06.297622  2356 sc2_env.py:240] Starting episode: 465
+Episode 464: 0
+I1116 01:53:37.411546  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:53:37.554436  2356 sc2_env.py:240] Starting episode: 466
+Episode 465: 0
+I1116 01:53:40.595451  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [20]
+I1116 01:53:40.728528  2356 sc2_env.py:240] Starting episode: 467
+Episode 466: 20
+I1116 01:53:44.680399  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 01:53:44.823729  2356 sc2_env.py:240] Starting episode: 468
+Episode 467: 26
+I1116 01:53:53.015704  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [8]
+I1116 01:53:53.143553  2356 sc2_env.py:240] Starting episode: 469
+Episode 468: 8
+I1116 01:54:23.816758  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:54:23.943103  2356 sc2_env.py:240] Starting episode: 470
+Episode 469: 0
+I1116 01:54:54.697201  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:54:54.825712  2356 sc2_env.py:240] Starting episode: 471
+Episode 470: 0
+I1116 01:55:25.626713  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [9]
+I1116 01:55:25.770893  2356 sc2_env.py:240] Starting episode: 472
+Episode 471: 9
+I1116 01:55:56.710568  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [8]
+I1116 01:55:56.860632  2356 sc2_env.py:240] Starting episode: 473
+Episode 472: 8
+I1116 01:56:27.612232  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [43]
+I1116 01:56:27.757128  2356 sc2_env.py:240] Starting episode: 474
+Episode 473: 43
+I1116 01:56:29.697351  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [22]
+I1116 01:56:29.841384  2356 sc2_env.py:240] Starting episode: 475
+Episode 474: 22
+I1116 01:56:33.996628  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:56:34.111377  2356 sc2_env.py:240] Starting episode: 476
+Episode 475: 11
+I1116 01:56:48.374134  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [57]
+I1116 01:56:48.514874  2356 sc2_env.py:240] Starting episode: 477
+Episode 476: 57
+I1116 01:56:57.513108  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [7], score: [7]
+I1116 01:56:57.649983  2356 sc2_env.py:240] Starting episode: 478
+Episode 477: 7
+I1116 01:57:19.530586  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [22]
+I1116 01:57:19.655426  2356 sc2_env.py:240] Starting episode: 479
+Episode 478: 22
+I1116 01:57:22.115147  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [19]
+I1116 01:57:22.273729  2356 sc2_env.py:240] Starting episode: 480
+Episode 479: 19
+I1116 01:57:29.324292  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 01:57:29.455753  2356 sc2_env.py:240] Starting episode: 481
+Episode 480: 36
+I1116 01:58:00.709859  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 01:58:00.837555  2356 sc2_env.py:240] Starting episode: 482
+Episode 481: 0
+I1116 01:58:07.796969  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:58:07.927173  2356 sc2_env.py:240] Starting episode: 483
+Episode 482: 11
+I1116 01:58:13.431381  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 01:58:13.573578  2356 sc2_env.py:240] Starting episode: 484
+Episode 483: 6
+I1116 01:58:15.895374  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [11]
+I1116 01:58:16.010400  2356 sc2_env.py:240] Starting episode: 485
+Episode 484: 11
+I1116 01:58:22.547360  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [7]
+I1116 01:58:22.672855  2356 sc2_env.py:240] Starting episode: 486
+Episode 485: 7
+I1116 01:58:34.171394  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 01:58:34.302810  2356 sc2_env.py:240] Starting episode: 487
+Episode 486: 11
+I1116 01:58:54.217231  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [67]
+I1116 01:58:54.363812  2356 sc2_env.py:240] Starting episode: 488
+Episode 487: 67
+I1116 01:59:16.708231  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [34]
+I1116 01:59:16.845246  2356 sc2_env.py:240] Starting episode: 489
+Episode 488: 34
+I1116 01:59:25.137833  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [22]
+I1116 01:59:25.267186  2356 sc2_env.py:240] Starting episode: 490
+Episode 489: 22
+I1116 01:59:28.927737  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 01:59:29.048066  2356 sc2_env.py:240] Starting episode: 491
+Episode 490: 31
+I1116 02:00:00.243330  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:00:00.373042  2356 sc2_env.py:240] Starting episode: 492
+Episode 491: 0
+I1116 02:00:31.173533  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:00:31.309196  2356 sc2_env.py:240] Starting episode: 493
+Episode 492: 0
+I1116 02:00:38.302676  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 02:00:38.455405  2356 sc2_env.py:240] Starting episode: 494
+Episode 493: 11
+I1116 02:01:09.311909  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [27]
+I1116 02:01:09.424099  2356 sc2_env.py:240] Starting episode: 495
+Episode 494: 27
+I1116 02:01:40.522591  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:01:40.653605  2356 sc2_env.py:240] Starting episode: 496
+Episode 495: 0
+I1116 02:01:48.881514  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:01:49.011036  2356 sc2_env.py:240] Starting episode: 497
+Episode 496: 31
+I1116 02:01:57.732603  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 02:01:57.869085  2356 sc2_env.py:240] Starting episode: 498
+Episode 497: 26
+I1116 02:02:02.585002  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [26]
+I1116 02:02:02.714356  2356 sc2_env.py:240] Starting episode: 499
+Episode 498: 26
+I1116 02:02:33.699361  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:02:33.860075  2356 sc2_env.py:240] Starting episode: 500
+Episode 499: 0
+I1116 02:02:36.022868  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:02:36.163862  2356 sc2_env.py:240] Starting episode: 501
+Episode 500: 6
+I1116 02:03:00.420921  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:03:00.559436  2356 sc2_env.py:240] Starting episode: 502
+Episode 501: 31
+I1116 02:03:19.711202  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [8], score: [28]
+I1116 02:03:19.846957  2356 sc2_env.py:240] Starting episode: 503
+Episode 502: 28
+I1116 02:03:26.364510  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:03:26.492331  2356 sc2_env.py:240] Starting episode: 504
+Episode 503: 26
+I1116 02:03:31.846219  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:03:31.972077  2356 sc2_env.py:240] Starting episode: 505
+Episode 504: 6
+I1116 02:04:03.192873  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [46]
+I1116 02:04:03.310860  2356 sc2_env.py:240] Starting episode: 506
+Episode 505: 46
+I1116 02:04:05.446447  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:04:05.580087  2356 sc2_env.py:240] Starting episode: 507
+Episode 506: 6
+I1116 02:04:13.131916  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [18]
+I1116 02:04:13.289995  2356 sc2_env.py:240] Starting episode: 508
+Episode 507: 18
+I1116 02:04:32.215003  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:04:32.356758  2356 sc2_env.py:240] Starting episode: 509
+Episode 508: 6
+I1116 02:04:38.350063  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 02:04:38.479188  2356 sc2_env.py:240] Starting episode: 510
+Episode 509: 26
+I1116 02:04:49.162674  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:04:49.286011  2356 sc2_env.py:240] Starting episode: 511
+Episode 510: 36
+I1116 02:04:56.297809  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [1], score: [21]
+I1116 02:04:56.431174  2356 sc2_env.py:240] Starting episode: 512
+Episode 511: 21
+I1116 02:05:23.795305  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:05:23.909356  2356 sc2_env.py:240] Starting episode: 513
+Episode 512: 21
+I1116 02:05:37.338118  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:05:37.499400  2356 sc2_env.py:240] Starting episode: 514
+Episode 513: 36
+I1116 02:05:40.884976  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:05:41.027266  2356 sc2_env.py:240] Starting episode: 515
+Episode 514: 6
+I1116 02:06:09.689031  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [62]
+I1116 02:06:09.809386  2356 sc2_env.py:240] Starting episode: 516
+Episode 515: 62
+I1116 02:06:22.995170  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 02:06:23.136911  2356 sc2_env.py:240] Starting episode: 517
+Episode 516: 1
+I1116 02:06:34.661195  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:06:34.776668  2356 sc2_env.py:240] Starting episode: 518
+Episode 517: 36
+I1116 02:06:41.937644  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 02:06:42.065407  2356 sc2_env.py:240] Starting episode: 519
+Episode 518: 16
+I1116 02:06:51.767077  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:06:51.896104  2356 sc2_env.py:240] Starting episode: 520
+Episode 519: 36
+I1116 02:06:56.585743  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 02:06:56.711039  2356 sc2_env.py:240] Starting episode: 521
+Episode 520: 11
+I1116 02:07:27.910470  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [45]
+I1116 02:07:28.041829  2356 sc2_env.py:240] Starting episode: 522
+Episode 521: 45
+I1116 02:07:37.835977  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:07:37.976510  2356 sc2_env.py:240] Starting episode: 523
+Episode 522: 36
+I1116 02:07:53.629260  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 02:07:53.756763  2356 sc2_env.py:240] Starting episode: 524
+Episode 523: 12
+I1116 02:08:20.465054  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [31]
+I1116 02:08:20.606301  2356 sc2_env.py:240] Starting episode: 525
+Episode 524: 31
+I1116 02:08:51.490293  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:08:51.619657  2356 sc2_env.py:240] Starting episode: 526
+Episode 525: 0
+I1116 02:09:22.711504  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:09:22.856386  2356 sc2_env.py:240] Starting episode: 527
+Episode 526: 0
+I1116 02:09:33.986998  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 02:09:34.130534  2356 sc2_env.py:240] Starting episode: 528
+Episode 527: 31
+I1116 02:10:05.327059  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:10:05.456557  2356 sc2_env.py:240] Starting episode: 529
+Episode 528: 0
+I1116 02:10:13.799409  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 02:10:13.943453  2356 sc2_env.py:240] Starting episode: 530
+Episode 529: 1
+I1116 02:10:16.433232  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 02:10:16.571158  2356 sc2_env.py:240] Starting episode: 531
+Episode 530: 16
+I1116 02:10:26.280926  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [33]
+I1116 02:10:26.415887  2356 sc2_env.py:240] Starting episode: 532
+Episode 531: 33
+I1116 02:10:54.339612  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:10:54.473478  2356 sc2_env.py:240] Starting episode: 533
+Episode 532: 26
+I1116 02:11:02.888199  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:11:03.004517  2356 sc2_env.py:240] Starting episode: 534
+Episode 533: 6
+I1116 02:11:08.041748  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [34]
+I1116 02:11:08.158703  2356 sc2_env.py:240] Starting episode: 535
+Episode 534: 34
+I1116 02:11:13.869003  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:11:14.009088  2356 sc2_env.py:240] Starting episode: 536
+Episode 535: 36
+I1116 02:11:45.418903  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [24]
+I1116 02:11:45.553270  2356 sc2_env.py:240] Starting episode: 537
+Episode 536: 24
+I1116 02:11:48.722219  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [23]
+I1116 02:11:48.865007  2356 sc2_env.py:240] Starting episode: 538
+Episode 537: 23
+I1116 02:12:08.365151  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:12:08.509984  2356 sc2_env.py:240] Starting episode: 539
+Episode 538: 26
+I1116 02:12:15.883970  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 02:12:16.043259  2356 sc2_env.py:240] Starting episode: 540
+Episode 539: 11
+I1116 02:12:47.140626  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [7]
+I1116 02:12:47.273489  2356 sc2_env.py:240] Starting episode: 541
+Episode 540: 7
+I1116 02:12:55.004723  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [20]
+I1116 02:12:55.142109  2356 sc2_env.py:240] Starting episode: 542
+Episode 541: 20
+I1116 02:13:05.810997  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [52]
+I1116 02:13:05.954521  2356 sc2_env.py:240] Starting episode: 543
+Episode 542: 52
+I1116 02:13:07.768839  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [5], score: [12]
+I1116 02:13:07.892326  2356 sc2_env.py:240] Starting episode: 544
+Episode 543: 12
+I1116 02:13:16.602231  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [68]
+I1116 02:13:16.728265  2356 sc2_env.py:240] Starting episode: 545
+Episode 544: 68
+I1116 02:13:24.284201  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 02:13:24.429239  2356 sc2_env.py:240] Starting episode: 546
+Episode 545: 11
+I1116 02:13:37.150945  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [62]
+I1116 02:13:37.284949  2356 sc2_env.py:240] Starting episode: 547
+Episode 546: 62
+I1116 02:14:08.363377  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [9]
+I1116 02:14:08.493941  2356 sc2_env.py:240] Starting episode: 548
+Episode 547: 9
+I1116 02:14:17.379988  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [27]
+I1116 02:14:17.502824  2356 sc2_env.py:240] Starting episode: 549
+Episode 548: 27
+I1116 02:14:48.832147  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:14:48.977544  2356 sc2_env.py:240] Starting episode: 550
+Episode 549: 0
+I1116 02:14:57.547278  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:14:57.690317  2356 sc2_env.py:240] Starting episode: 551
+Episode 550: 31
+I1116 02:15:29.158314  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [8]
+I1116 02:15:29.303711  2356 sc2_env.py:240] Starting episode: 552
+Episode 551: 8
+I1116 02:15:34.007786  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [7], score: [18]
+I1116 02:15:34.137641  2356 sc2_env.py:240] Starting episode: 553
+Episode 552: 18
+I1116 02:15:53.139939  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:15:53.281484  2356 sc2_env.py:240] Starting episode: 554
+Episode 553: 21
+I1116 02:16:24.746437  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:16:24.892974  2356 sc2_env.py:240] Starting episode: 555
+Episode 554: 0
+I1116 02:16:35.414879  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [58]
+I1116 02:16:35.532769  2356 sc2_env.py:240] Starting episode: 556
+Episode 555: 58
+I1116 02:17:06.946767  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [5], score: [59]
+I1116 02:17:07.102263  2356 sc2_env.py:240] Starting episode: 557
+Episode 556: 59
+I1116 02:17:23.468391  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [1], score: [6]
+I1116 02:17:23.607583  2356 sc2_env.py:240] Starting episode: 558
+Episode 557: 6
+I1116 02:17:36.758367  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [57]
+I1116 02:17:36.903278  2356 sc2_env.py:240] Starting episode: 559
+Episode 558: 57
+I1116 02:17:52.614362  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 02:17:52.754408  2356 sc2_env.py:240] Starting episode: 560
+Episode 559: 1
+I1116 02:18:04.785471  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [27]
+I1116 02:18:04.938544  2356 sc2_env.py:240] Starting episode: 561
+Episode 560: 27
+I1116 02:18:10.771327  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [9], score: [19]
+I1116 02:18:10.924969  2356 sc2_env.py:240] Starting episode: 562
+Episode 561: 19
+I1116 02:18:14.113892  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [11]
+I1116 02:18:14.241493  2356 sc2_env.py:240] Starting episode: 563
+Episode 562: 11
+I1116 02:18:45.155144  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [19]
+I1116 02:18:45.282149  2356 sc2_env.py:240] Starting episode: 564
+Episode 563: 19
+I1116 02:19:16.092398  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:19:16.237325  2356 sc2_env.py:240] Starting episode: 565
+Episode 564: 0
+I1116 02:19:23.949473  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 02:19:24.091004  2356 sc2_env.py:240] Starting episode: 566
+Episode 565: 31
+I1116 02:19:55.139487  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [5]
+I1116 02:19:55.284731  2356 sc2_env.py:240] Starting episode: 567
+Episode 566: 5
+I1116 02:20:15.689915  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [13]
+I1116 02:20:15.806549  2356 sc2_env.py:240] Starting episode: 568
+Episode 567: 13
+I1116 02:20:20.080517  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:20:20.209804  2356 sc2_env.py:240] Starting episode: 569
+Episode 568: 31
+I1116 02:20:23.619415  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:20:23.752418  2356 sc2_env.py:240] Starting episode: 570
+Episode 569: 21
+I1116 02:20:52.307919  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [21]
+I1116 02:20:52.447317  2356 sc2_env.py:240] Starting episode: 571
+Episode 570: 21
+I1116 02:20:56.386905  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 02:20:56.515942  2356 sc2_env.py:240] Starting episode: 572
+Episode 571: 11
+I1116 02:21:02.368222  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:21:02.511751  2356 sc2_env.py:240] Starting episode: 573
+Episode 572: 36
+I1116 02:21:10.391073  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [27]
+I1116 02:21:10.518204  2356 sc2_env.py:240] Starting episode: 574
+Episode 573: 27
+I1116 02:21:41.481125  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [17]
+I1116 02:21:41.612475  2356 sc2_env.py:240] Starting episode: 575
+Episode 574: 17
+I1116 02:21:45.758157  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:21:45.887050  2356 sc2_env.py:240] Starting episode: 576
+Episode 575: 31
+I1116 02:21:54.085646  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [38]
+I1116 02:21:54.228233  2356 sc2_env.py:240] Starting episode: 577
+Episode 576: 38
+I1116 02:22:06.126637  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 02:22:06.270029  2356 sc2_env.py:240] Starting episode: 578
+Episode 577: 11
+I1116 02:22:24.645513  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [7], score: [26]
+I1116 02:22:24.786749  2356 sc2_env.py:240] Starting episode: 579
+Episode 578: 26
+I1116 02:22:39.599469  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 02:22:39.759057  2356 sc2_env.py:240] Starting episode: 580
+Episode 579: 31
+I1116 02:23:11.124769  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:23:11.245362  2356 sc2_env.py:240] Starting episode: 581
+Episode 580: 0
+I1116 02:23:17.272317  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:23:17.400602  2356 sc2_env.py:240] Starting episode: 582
+Episode 581: 31
+I1116 02:23:39.492868  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [28]
+I1116 02:23:39.620718  2356 sc2_env.py:240] Starting episode: 583
+Episode 582: 28
+I1116 02:23:42.058635  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:23:42.201843  2356 sc2_env.py:240] Starting episode: 584
+Episode 583: 6
+I1116 02:23:52.457519  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 02:23:52.618458  2356 sc2_env.py:240] Starting episode: 585
+Episode 584: 6
+I1116 02:24:02.232460  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [9]
+I1116 02:24:02.372503  2356 sc2_env.py:240] Starting episode: 586
+Episode 585: 9
+I1116 02:24:16.575146  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:24:16.708158  2356 sc2_env.py:240] Starting episode: 587
+Episode 586: 26
+I1116 02:24:20.822125  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:24:20.951830  2356 sc2_env.py:240] Starting episode: 588
+Episode 587: 26
+I1116 02:24:44.598177  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 02:24:44.725734  2356 sc2_env.py:240] Starting episode: 589
+Episode 588: 26
+I1116 02:25:15.824102  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [43]
+I1116 02:25:15.952605  2356 sc2_env.py:240] Starting episode: 590
+Episode 589: 43
+I1116 02:25:21.305023  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:25:21.419652  2356 sc2_env.py:240] Starting episode: 591
+Episode 590: 21
+I1116 02:25:27.386636  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 02:25:27.546091  2356 sc2_env.py:240] Starting episode: 592
+Episode 591: 26
+I1116 02:25:30.629687  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [18]
+I1116 02:25:30.787825  2356 sc2_env.py:240] Starting episode: 593
+Episode 592: 18
+I1116 02:25:37.227294  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:25:37.373030  2356 sc2_env.py:240] Starting episode: 594
+Episode 593: 36
+I1116 02:25:51.382786  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 02:25:51.505949  2356 sc2_env.py:240] Starting episode: 595
+Episode 594: 31
+I1116 02:26:03.509562  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:26:03.633400  2356 sc2_env.py:240] Starting episode: 596
+Episode 595: 26
+I1116 02:26:34.773977  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:26:34.903331  2356 sc2_env.py:240] Starting episode: 597
+Episode 596: 0
+I1116 02:27:01.950957  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [57]
+I1116 02:27:02.084988  2356 sc2_env.py:240] Starting episode: 598
+Episode 597: 57
+I1116 02:27:15.936099  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:27:16.094818  2356 sc2_env.py:240] Starting episode: 599
+Episode 598: 21
+I1116 02:27:21.280130  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [28]
+I1116 02:27:21.395446  2356 sc2_env.py:240] Starting episode: 600
+Episode 599: 28
+I1116 02:27:24.266206  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:27:24.418623  2356 sc2_env.py:240] Starting episode: 601
+Episode 600: 31
+I1116 02:27:45.812652  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [73]
+I1116 02:27:45.939164  2356 sc2_env.py:240] Starting episode: 602
+Episode 601: 73
+I1116 02:28:17.024042  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [4]
+I1116 02:28:17.160154  2356 sc2_env.py:240] Starting episode: 603
+Episode 602: 4
+I1116 02:28:25.966032  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:28:26.111430  2356 sc2_env.py:240] Starting episode: 604
+Episode 603: 21
+I1116 02:28:57.322408  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [8]
+I1116 02:28:57.437735  2356 sc2_env.py:240] Starting episode: 605
+Episode 604: 8
+I1116 02:29:13.951111  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [11]
+I1116 02:29:14.067567  2356 sc2_env.py:240] Starting episode: 606
+Episode 605: 11
+I1116 02:29:23.034352  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [21]
+I1116 02:29:23.181407  2356 sc2_env.py:240] Starting episode: 607
+Episode 606: 21
+I1116 02:29:25.963912  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:29:26.108753  2356 sc2_env.py:240] Starting episode: 608
+Episode 607: 26
+I1116 02:29:57.216987  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [20]
+I1116 02:29:57.345338  2356 sc2_env.py:240] Starting episode: 609
+Episode 608: 20
+I1116 02:30:13.612945  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:30:13.754727  2356 sc2_env.py:240] Starting episode: 610
+Episode 609: 6
+I1116 02:30:22.930665  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:30:23.073212  2356 sc2_env.py:240] Starting episode: 611
+Episode 610: 6
+I1116 02:30:54.487534  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [8]
+I1116 02:30:54.610888  2356 sc2_env.py:240] Starting episode: 612
+Episode 611: 8
+I1116 02:31:26.121543  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [34]
+I1116 02:31:26.267584  2356 sc2_env.py:240] Starting episode: 613
+Episode 612: 34
+I1116 02:31:57.758875  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [28]
+I1116 02:31:57.903770  2356 sc2_env.py:240] Starting episode: 614
+Episode 613: 28
+I1116 02:32:18.070625  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:32:18.211659  2356 sc2_env.py:240] Starting episode: 615
+Episode 614: 31
+I1116 02:32:21.249176  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:32:21.377025  2356 sc2_env.py:240] Starting episode: 616
+Episode 615: 6
+I1116 02:32:40.196656  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 02:32:40.319635  2356 sc2_env.py:240] Starting episode: 617
+Episode 616: 11
+I1116 02:32:58.924574  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [72]
+I1116 02:33:04.326910  2356 sc2_env.py:240] Starting episode: 618
+Episode 617: 72
+I1116 02:33:35.592119  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:33:35.757572  2356 sc2_env.py:240] Starting episode: 619
+Episode 618: 0
+I1116 02:33:43.249957  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [17]
+I1116 02:33:43.404037  2356 sc2_env.py:240] Starting episode: 620
+Episode 619: 17
+I1116 02:33:48.195826  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:33:48.338215  2356 sc2_env.py:240] Starting episode: 621
+Episode 620: 31
+I1116 02:33:57.409106  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [28]
+I1116 02:33:57.548486  2356 sc2_env.py:240] Starting episode: 622
+Episode 621: 28
+I1116 02:34:06.980101  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 02:34:07.093813  2356 sc2_env.py:240] Starting episode: 623
+Episode 622: 16
+I1116 02:34:24.687882  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [67]
+I1116 02:34:24.815510  2356 sc2_env.py:240] Starting episode: 624
+Episode 623: 67
+I1116 02:34:34.592780  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:34:34.737319  2356 sc2_env.py:240] Starting episode: 625
+Episode 624: 26
+I1116 02:34:38.836282  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [8], score: [14]
+I1116 02:34:38.976350  2356 sc2_env.py:240] Starting episode: 626
+Episode 625: 14
+I1116 02:34:44.160319  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 02:34:44.285662  2356 sc2_env.py:240] Starting episode: 627
+Episode 626: 26
+I1116 02:35:15.893702  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:35:16.055143  2356 sc2_env.py:240] Starting episode: 628
+Episode 627: 0
+I1116 02:35:20.527544  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [28]
+I1116 02:35:20.653890  2356 sc2_env.py:240] Starting episode: 629
+Episode 628: 28
+I1116 02:35:30.227321  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [7]
+I1116 02:35:30.354863  2356 sc2_env.py:240] Starting episode: 630
+Episode 629: 7
+I1116 02:35:36.450945  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 02:35:36.609819  2356 sc2_env.py:240] Starting episode: 631
+Episode 630: 11
+I1116 02:36:07.683181  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:36:07.813709  2356 sc2_env.py:240] Starting episode: 632
+Episode 631: 31
+I1116 02:36:22.469826  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [62]
+I1116 02:36:22.611860  2356 sc2_env.py:240] Starting episode: 633
+Episode 632: 62
+I1116 02:36:28.000969  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:36:28.137483  2356 sc2_env.py:240] Starting episode: 634
+Episode 633: 36
+I1116 02:36:32.404083  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 02:36:32.535743  2356 sc2_env.py:240] Starting episode: 635
+Episode 634: 16
+I1116 02:36:38.997002  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [13]
+I1116 02:36:39.122500  2356 sc2_env.py:240] Starting episode: 636
+Episode 635: 13
+I1116 02:36:44.652060  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:36:44.795294  2356 sc2_env.py:240] Starting episode: 637
+Episode 636: 31
+I1116 02:37:16.124100  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:37:16.269893  2356 sc2_env.py:240] Starting episode: 638
+Episode 637: 0
+I1116 02:37:24.883108  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [29]
+I1116 02:37:24.998423  2356 sc2_env.py:240] Starting episode: 639
+Episode 638: 29
+I1116 02:37:36.430874  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [14], score: [31]
+I1116 02:37:36.567899  2356 sc2_env.py:240] Starting episode: 640
+Episode 639: 31
+I1116 02:37:49.144880  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [39]
+I1116 02:37:49.272229  2356 sc2_env.py:240] Starting episode: 641
+Episode 640: 39
+I1116 02:38:20.738782  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:38:20.890197  2356 sc2_env.py:240] Starting episode: 642
+Episode 641: 0
+I1116 02:38:52.622217  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [42]
+I1116 02:38:52.755215  2356 sc2_env.py:240] Starting episode: 643
+Episode 642: 42
+I1116 02:39:23.771825  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:39:23.921586  2356 sc2_env.py:240] Starting episode: 644
+Episode 643: 0
+I1116 02:39:29.519253  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [22]
+I1116 02:39:29.658802  2356 sc2_env.py:240] Starting episode: 645
+Episode 644: 22
+I1116 02:39:52.814404  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:39:52.939245  2356 sc2_env.py:240] Starting episode: 646
+Episode 645: 31
+I1116 02:39:58.943764  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 02:39:59.087617  2356 sc2_env.py:240] Starting episode: 647
+Episode 646: 16
+I1116 02:40:27.293012  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:40:27.438910  2356 sc2_env.py:240] Starting episode: 648
+Episode 647: 26
+I1116 02:40:58.900296  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [14]
+I1116 02:40:59.033757  2356 sc2_env.py:240] Starting episode: 649
+Episode 648: 14
+I1116 02:41:30.623156  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [12]
+I1116 02:41:30.764519  2356 sc2_env.py:240] Starting episode: 650
+Episode 649: 12
+I1116 02:41:42.511202  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [6]
+I1116 02:41:42.643105  2356 sc2_env.py:240] Starting episode: 651
+Episode 650: 6
+I1116 02:41:51.962542  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 02:41:52.092294  2356 sc2_env.py:240] Starting episode: 652
+Episode 651: 16
+I1116 02:41:55.295727  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:41:55.424099  2356 sc2_env.py:240] Starting episode: 653
+Episode 652: 6
+I1116 02:42:03.432231  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [26]
+I1116 02:42:03.558576  2356 sc2_env.py:240] Starting episode: 654
+Episode 653: 26
+I1116 02:42:23.664766  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:42:23.794629  2356 sc2_env.py:240] Starting episode: 655
+Episode 654: 36
+I1116 02:42:40.992441  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 02:42:41.122797  2356 sc2_env.py:240] Starting episode: 656
+Episode 655: 1
+I1116 02:42:49.877409  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [8]
+I1116 02:42:50.003169  2356 sc2_env.py:240] Starting episode: 657
+Episode 656: 8
+I1116 02:43:21.522652  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [3]
+I1116 02:43:21.653510  2356 sc2_env.py:240] Starting episode: 658
+Episode 657: 3
+I1116 02:43:27.049378  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:43:27.193908  2356 sc2_env.py:240] Starting episode: 659
+Episode 658: 31
+I1116 02:43:30.669343  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:43:30.814239  2356 sc2_env.py:240] Starting episode: 660
+Episode 659: 21
+I1116 02:43:34.648026  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 02:43:34.790916  2356 sc2_env.py:240] Starting episode: 661
+Episode 660: 11
+I1116 02:43:46.079117  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [2], score: [6]
+I1116 02:43:46.214760  2356 sc2_env.py:240] Starting episode: 662
+Episode 661: 6
+I1116 02:43:52.656616  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [17]
+I1116 02:43:52.778450  2356 sc2_env.py:240] Starting episode: 663
+Episode 662: 17
+I1116 02:43:59.830137  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 02:43:59.972526  2356 sc2_env.py:240] Starting episode: 664
+Episode 663: 12
+I1116 02:44:15.310041  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [62]
+I1116 02:44:15.454087  2356 sc2_env.py:240] Starting episode: 665
+Episode 664: 62
+I1116 02:44:22.467578  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [21]
+I1116 02:44:22.610446  2356 sc2_env.py:240] Starting episode: 666
+Episode 665: 21
+I1116 02:44:28.191020  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:44:28.330089  2356 sc2_env.py:240] Starting episode: 667
+Episode 666: 26
+I1116 02:44:33.577712  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 02:44:33.719600  2356 sc2_env.py:240] Starting episode: 668
+Episode 667: 1
+I1116 02:44:44.821982  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:44:44.962366  2356 sc2_env.py:240] Starting episode: 669
+Episode 668: 21
+I1116 02:45:16.453825  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [45]
+I1116 02:45:16.600369  2356 sc2_env.py:240] Starting episode: 670
+Episode 669: 45
+I1116 02:45:21.627649  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:45:21.756036  2356 sc2_env.py:240] Starting episode: 671
+Episode 670: 6
+I1116 02:45:41.829827  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:45:41.974221  2356 sc2_env.py:240] Starting episode: 672
+Episode 671: 36
+I1116 02:46:14.006558  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [9]
+I1116 02:46:14.138418  2356 sc2_env.py:240] Starting episode: 673
+Episode 672: 9
+I1116 02:46:45.498364  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [5]
+I1116 02:46:45.631652  2356 sc2_env.py:240] Starting episode: 674
+Episode 673: 5
+I1116 02:46:50.824077  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [21]
+I1116 02:46:50.968249  2356 sc2_env.py:240] Starting episode: 675
+Episode 674: 21
+I1116 02:47:23.792067  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [8]
+I1116 02:47:23.926149  2356 sc2_env.py:240] Starting episode: 676
+Episode 675: 8
+I1116 02:47:33.576627  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:47:33.709991  2356 sc2_env.py:240] Starting episode: 677
+Episode 676: 31
+I1116 02:47:48.873065  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [52]
+I1116 02:47:49.031610  2356 sc2_env.py:240] Starting episode: 678
+Episode 677: 52
+I1116 02:47:53.059821  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [16]
+I1116 02:47:53.180877  2356 sc2_env.py:240] Starting episode: 679
+Episode 678: 16
+I1116 02:47:57.851728  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+I1116 02:47:57.995885  2356 sc2_env.py:240] Starting episode: 680
+Episode 679: 16
+I1116 02:48:23.951290  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [52]
+I1116 02:48:24.093179  2356 sc2_env.py:240] Starting episode: 681
+Episode 680: 52
+I1116 02:48:36.271102  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [7]
+I1116 02:48:36.420263  2356 sc2_env.py:240] Starting episode: 682
+Episode 681: 7
+I1116 02:48:40.516082  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [31]
+I1116 02:48:40.672805  2356 sc2_env.py:240] Starting episode: 683
+Episode 682: 31
+I1116 02:48:57.330855  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [52]
+I1116 02:48:57.475137  2356 sc2_env.py:240] Starting episode: 684
+Episode 683: 52
+I1116 02:49:30.796059  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:49:30.942322  2356 sc2_env.py:240] Starting episode: 685
+Episode 684: 0
+I1116 02:50:03.942539  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [9]
+I1116 02:50:04.101215  2356 sc2_env.py:240] Starting episode: 686
+Episode 685: 9
+I1116 02:50:09.818217  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:50:09.977003  2356 sc2_env.py:240] Starting episode: 687
+Episode 686: 26
+I1116 02:50:18.982172  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [1]
+I1116 02:50:19.126086  2356 sc2_env.py:240] Starting episode: 688
+Episode 687: 1
+I1116 02:50:38.359279  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:50:38.478224  2356 sc2_env.py:240] Starting episode: 689
+Episode 688: 26
+I1116 02:50:51.038783  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [11]
+I1116 02:50:51.174021  2356 sc2_env.py:240] Starting episode: 690
+Episode 689: 11
+I1116 02:50:55.051326  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [22]
+I1116 02:50:55.208237  2356 sc2_env.py:240] Starting episode: 691
+Episode 690: 22
+I1116 02:51:26.559406  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [4]
+I1116 02:51:26.716931  2356 sc2_env.py:240] Starting episode: 692
+Episode 691: 4
+I1116 02:51:38.216563  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 02:51:38.360162  2356 sc2_env.py:240] Starting episode: 693
+Episode 692: 11
+I1116 02:51:43.259099  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [11]
+I1116 02:51:43.403900  2356 sc2_env.py:240] Starting episode: 694
+Episode 693: 11
+I1116 02:51:45.104926  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [8]
+I1116 02:51:45.245310  2356 sc2_env.py:240] Starting episode: 695
+Episode 694: 8
+I1116 02:51:48.237313  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 02:51:48.379201  2356 sc2_env.py:240] Starting episode: 696
+Episode 695: 12
+I1116 02:52:20.207971  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:52:20.340990  2356 sc2_env.py:240] Starting episode: 697
+Episode 696: 31
+I1116 02:52:52.641839  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [0]
+I1116 02:52:52.788377  2356 sc2_env.py:240] Starting episode: 698
+Episode 697: 0
+I1116 02:52:57.325755  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [11]
+I1116 02:52:57.455610  2356 sc2_env.py:240] Starting episode: 699
+Episode 698: 11
+I1116 02:53:03.097275  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:53:03.240165  2356 sc2_env.py:240] Starting episode: 700
+Episode 699: 31
+I1116 02:53:12.943518  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:53:13.099108  2356 sc2_env.py:240] Starting episode: 701
+Episode 700: 31
+I1116 02:53:31.013973  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [31]
+I1116 02:53:31.147839  2356 sc2_env.py:240] Starting episode: 702
+Episode 701: 31
+I1116 02:53:46.424981  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [8], score: [63]
+I1116 02:53:46.564863  2356 sc2_env.py:240] Starting episode: 703
+Episode 702: 63
+I1116 02:53:56.510576  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [36]
+I1116 02:53:56.654807  2356 sc2_env.py:240] Starting episode: 704
+Episode 703: 36
+I1116 02:54:03.208109  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [26]
+I1116 02:54:03.358554  2356 sc2_env.py:240] Starting episode: 705
+Episode 704: 26
+I1116 02:54:28.388826  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [3], score: [6]
+I1116 02:54:28.531888  2356 sc2_env.py:240] Starting episode: 706
+Episode 705: 6
+I1116 02:55:01.225410  2356 sc2_env.py:310] Episode finished. Outcome: [1], reward: [0], score: [20]
+I1116 02:55:01.392954  2356 sc2_env.py:240] Starting episode: 707
+Episode 706: 20
+I1116 02:55:03.751971  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [31]
+I1116 02:55:03.876890  2356 sc2_env.py:240] Starting episode: 708
+Episode 707: 31
+I1116 02:55:11.047837  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [12]
+I1116 02:55:11.188376  2356 sc2_env.py:240] Starting episode: 709
+Episode 708: 12
+I1116 02:55:27.894335  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [6]
+I1116 02:55:28.023689  2356 sc2_env.py:240] Starting episode: 710
+Episode 709: 6
+I1116 02:55:34.604211  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [4], score: [26]
+I1116 02:55:34.733524  2356 sc2_env.py:240] Starting episode: 711
+Episode 710: 26
+I1116 02:55:41.403630  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-2], score: [11]
+I1116 02:55:41.547546  2356 sc2_env.py:240] Starting episode: 712
+Episode 711: 11
+I1116 02:56:12.763142  2356 sc2_env.py:310] Episode finished. Outcome: [-1], reward: [-1], score: [16]
+Took 10196.227 seconds for 75967 steps: 7.451 fps
+I1116 03:01:49.594429  2356 sc2_env.py:327] Environment Close
+I1116 03:01:49.594429  2356 sc2_env.py:342]

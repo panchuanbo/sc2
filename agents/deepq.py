@@ -6,6 +6,8 @@ import numpy as np
 import tensorflow as tf
 import random
 
+import datetime
+
 from pysc2.agents import base_agent
 from pysc2.lib import actions
 from pysc2.lib import features
@@ -39,12 +41,12 @@ TAU = 0.001
 ACTOR_LEARNING_RATE = 0.0001
 CRITIC_LEARNING_RATE = 0.001
 BUFFER_SIZE = 1000000
-MINIBATCH_SIZE = 16
+MINIBATCH_SIZE = 25
 MIN_FRAMES = 1000
 MAX_EPISODES = 50000
 MAX_EP_STEPS = 1000
 GAMMA = 0.99
-EP_MULTIPLIER = 0.9998 #(10000 steps to 0.1)
+EP_MULTIPLIER = 0.99999 #(10000 steps to 0.1)
 NEGATIVE_INFINITY = -float('inf')
 
 class DeepQAgent(base_agent.BaseAgent):
@@ -61,13 +63,25 @@ class DeepQAgent(base_agent.BaseAgent):
         self.lastaction = None
         self.lastreward = None
 
+        self.rewards_list = []
+
+        saver = tf.train.Saver()
+        saver.restore(self.sess, "./models/actorcritic_lingbane")
+
     def __del__(self):
         saver = tf.train.Saver()
         saver.save(self.sess, "./models/actorcritic_lingbane")
+
+        file_name = 'rewards_' + str(datetime.datetime.now()) + '.txt'
+        file_name = file_name.replace(":", ".")
+        rewards_file = open(file_name, 'w')
+        for r in self.rewards_list:
+            rewards_file.write("%s\n" % str(r))
         
 
     def reset(self):
         print("Episode " + str(self.episodes) + ": " + str(self.reward))
+        self.rewards_list.append(self.reward)
         super(DeepQAgent, self).reset()
         self.reward = 0
         self.laststate = None
