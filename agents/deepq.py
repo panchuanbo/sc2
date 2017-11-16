@@ -50,6 +50,7 @@ NEGATIVE_INFINITY = -float('inf')
 class DeepQAgent(base_agent.BaseAgent):
 
     def __init__(self):
+        super().__init__()
         self.sess = tf.Session()
         self.actor = ActorNetwork(self.sess, ACTOR_LEARNING_RATE, TAU)
         self.critic = CriticNetwork(self.sess, CRITIC_LEARNING_RATE,
@@ -76,7 +77,7 @@ class DeepQAgent(base_agent.BaseAgent):
     def step(self, obs):
         global EPSILON
         super(DeepQAgent, self).step(obs)
-        currentstate = np.transpose(obs.observation["screen"], [1, 2, 0]) #84x84x13
+        currentstate = np.transpose(obs.observation["screen"], [1, 2, 0]) #84x84x17
         # for func_id in (_NO_OP, _MOVE_SCREEN, _ATTACK_SCREEN, _SELECT_BOX, _SELECT):
         #     print(self.action_spec.functions[func_id].args)
         # print("1", self.steps)
@@ -119,7 +120,7 @@ class DeepQAgent(base_agent.BaseAgent):
         else:
             # print("2.5", self.steps)
             function_id, args = self.networktosc2(self.actor.predict(
-                np.reshape(currentstate, [1, 84, 84, 13]))[0], obs)
+                np.reshape(currentstate, [1, 84, 84, 17]))[0], obs)
         # print("3", self.steps)
         self.laststate = currentstate
         self.lastaction = function_id, args

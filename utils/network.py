@@ -44,7 +44,7 @@ class ActorNetwork(object):
 			self.network_params) + len(self.target_network_params)
 
 	def model(self):
-		state = tf.placeholder(tf.float32, [None, 84, 84, 13])
+		state = tf.placeholder(tf.float32, [None, 84, 84, 17])
 		is_training = tf.placeholder(tf.bool)
 
 		out = tf.layers.batch_normalization(state, training = is_training)
@@ -123,7 +123,7 @@ class CriticNetwork(object):
 		self.action_grads = tf.gradients(self.out, self.action)
 
 	def model(self):
-		state = tf.placeholder(tf.float32, [None, 84, 84, 13])
+		state = tf.placeholder(tf.float32, [None, 84, 84, 17])
 		action = tf.placeholder(tf.float32, [None, 5, 5])
 		is_training = tf.placeholder(tf.bool)
 
