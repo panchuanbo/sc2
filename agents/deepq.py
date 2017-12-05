@@ -46,7 +46,7 @@ MIN_FRAMES = 1000
 MAX_EPISODES = 50000
 MAX_EP_STEPS = 1000
 GAMMA = 0.99
-EP_MULTIPLIER = 0.99999 #(10000 steps to 0.1)
+EP_MULTIPLIER = 0.095 #(10000 steps to 0.1)
 NEGATIVE_INFINITY = -float('inf')
 
 class DeepQAgent(base_agent.BaseAgent):
@@ -66,11 +66,11 @@ class DeepQAgent(base_agent.BaseAgent):
         self.rewards_list = []
 
         saver = tf.train.Saver()
-        saver.restore(self.sess, "./models/actorcritic_lingbane")
+        saver.restore(self.sess, "./models/actorcritic_lingbane/actorcritic_lingbane")
 
     def __del__(self):
         saver = tf.train.Saver()
-        saver.save(self.sess, "./models/actorcritic_lingbane")
+        saver.save(self.sess, "./models/actorcritic_lingbane/actorcritic_lingbane")
 
         file_name = 'rewards_' + str(datetime.datetime.now()) + '.txt'
         file_name = file_name.replace(":", ".")
