@@ -1,0 +1,2 @@
+model_checkpoint_path: "imitation_learner_beta"
+all_model_checkpoint_paths: "imitation_learner_beta"
