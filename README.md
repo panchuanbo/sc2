@@ -1,5 +1,5 @@
 # sc2 ai
-stanford cs221 + 229 final project
+stanford cs221 + 229 final project by @panchuanbo and @jjbarratt
 
 The code is extremely messy (alas, final project code). Might get around to cleaning it up but for the meantime:
 * Everything in the Replay folder is for CS 229 (Supervised Learning)
